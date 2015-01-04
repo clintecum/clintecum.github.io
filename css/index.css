@@ -5,7 +5,7 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   top: 20px;
-  background-image: url('file:///Users/cf/Desktop/blog/img/background.jpg');
+  background-image: url('/img/background.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
 }
