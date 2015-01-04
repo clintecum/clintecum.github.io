@@ -5,7 +5,7 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   top: 20px;
-  background-image: url('/img/background.jpg');
+  background-image: url('../img/background.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -74,46 +74,46 @@ body {
 }
 
 #one{
-background-image: url('file:///Users/cf/Desktop/blog/img/luther-blog.png');
+background-image: url('../img/luther-blog.png');
 background-repeat: no-repeat;
 }
 #one:hover {
-  background-image: url('img/hov-blog.png');
+  background-image: url('../img/hov-blog.png');
   background-repeat: no-repeat;
 }
 
 #two {
-background-image: url('img/hegel-portfolio.png');
+background-image: url('../img/hegel-portfolio.png');
 background-repeat: no-repeat;
 }
 #two:hover {
-  background-image: url('img/hov-portfolio.png');
+  background-image: url('../img/hov-portfolio.png');
   background-repeat: no-repeat;
 }
 
 #three {
-background-image: url('img/lukacs-about.png');
+background-image: url('../img/lukacs-about.png');
 background-repeat: no-repeat;
 }
 #three:hover {
-  background-image: url('img/hov-about.png');
+  background-image: url('../img/hov-about.png');
   background-repeat: no-repeat;
 }
 
 #four {
-background-image: url('img/hammurabi-goals.png');
+background-image: url('../img/hammurabi-goals.png');
 background-repeat: no-repeat;
 }
 #four:hover {
-  background-image: url('img/hov-goals.png');
+  background-image: url('../img/hov-goals.png');
   background-repeat: no-repeat;
 }
 #five {
-background-image: url('img/ibsen-contact.png');
+background-image: url('../img/ibsen-contact.png');
 background-repeat: no-repeat;
 }
 #five:hover {
-  background-image: url('img/hov-contact.png');
+  background-image: url('../img/hov-contact.png');
   background-repeat: no-repeat;
 }
 #wrapper-box {
