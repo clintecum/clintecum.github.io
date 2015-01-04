@@ -190,21 +190,21 @@ margin-right: auto;
   margin-bottom: -20px;
 }
 #column ul li p {
-  color: #00BDFF;
+  color: red;
   position: relative;
- font-family: 'IM Fell French Canon', serif;
- font-size: 14px;
-  top: 25px;
+ font-family: 'IM Fell French Canon SC', serif;
+ font-size: 15px;
+  top: 40px;
   left: -20px;
 
 }
 #column ul li a {
-  color: red;
-  font-family: 'IM Fell French Canon SC';
-  font-size: 15px;
+  color: #00BDFF;
+  font-family: 'IM Fell French Canon';
+  font-size: 14px;
   position: relative;
   left: -20px;
-  top: 40px;
+  top: 22px;
 }
 
 #main h1{
