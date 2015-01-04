@@ -51,12 +51,10 @@ body {
   top: 140px;
 }
 
-
-
-
 #wrapper-box {
   position: relative;
   width: 525px;
+
   margin-top: 100px;
   left: 50px;
   top: 90px;
@@ -78,37 +76,8 @@ top: -5px;
 
 }
 
-#border {
-  background-color: red;
-  height: 10px;
-  width: 124.4%;
-  position: relative;
-   z-index: 99998;
-   top: 190px;
-   left: -5px;
 
-}
-#border-2 {
-width: 124.4%;
-height: 10px;
-background-color: red;
-position: relative;
-z-index: 99997;
-top: -551px;
-left: -5px;
 
-}
-
-#footer {
-    width:124.6%;
-    float:left;
-    height: 30px;
-    background-color: black;
-    position: relative;
-    top: 115px;
-    left: -10px;
-    border-top: 10px solid red;
-}
 
 #tabs {
 position: absolute;
@@ -180,30 +149,21 @@ margin-right: auto;
 }
 
 
-#column ul {
-  list-style: none;
-  position: relative;
-  top: 5px;
-}
-
-#column ul li {
-  margin-bottom: -20px;
-}
-#column ul li p {
+#column p {
   color: red;
   position: relative;
  font-family: 'IM Fell French Canon SC', serif;
  font-size: 15px;
   top: 40px;
-  left: -20px;
+  left: 20px;
 
 }
-#column ul li a {
+#column a{
   color: #00BDFF;
   font-family: 'IM Fell French Canon';
   font-size: 14px;
   position: relative;
-  left: -20px;
+  left: 20px;
   top: 22px;
 }
 
