@@ -49,7 +49,7 @@ body {
   width: 129%;
   height: 650px;
   position: fixed;
-  background-image: url('img/bkg-about.jpg');
+  background-image: url('../img/bkg-about.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   margin-left: 55px;
