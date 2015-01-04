@@ -47,14 +47,14 @@ body {
 
 #content{
   width: 129%;
-  height: 650px;
+  height: 1050px;
   position: fixed;
-  background-image: url('../img/bkg-about.jpg');
+  background-image: url('file:///Users/cf/Desktop/blog/img/iii.png');
   background-size: 100%;
   background-repeat: no-repeat;
   margin-left: 55px;
-  left: -270px;
-  top: 130px;
+  left: -100px;
+  top: 140px;
 }
 
 
@@ -115,78 +115,136 @@ left: -5px;
     border-top: 10px solid red;
 }
 
+#tabs {
+position: absolute;
+height: 50px;
+width: 310px;
+top: 142px;
+left: 900px;
+}
 
+.tabular {
+width: 145px;
+height: 35px;
+display: inline-block;
+position: relative;
+top: 6px;
+}
+#tab1 {
+  background-color: red;
+  position: relative;
+  top: 6px;
+
+}
+#spantab{
+font-family: 'IM Fell French Canon SC';
+  font-size: 18px;
+  color: black;
+  left: 35px;
+  position: relative;
+  top: 9px;
+}
+#tab2 {
+  background-color: #7F0000;
+}
+
+#tab2 a {
+  text-decoration: none;
+  color: red;
+  position: relative;
+  left: 30px;
+  color: red;
+  font-family: 'IM Fell French Canon SC';
+  font-size: 18px;
+  top: 9px;
+}
+#tab2 a:hover {
+  color: yellow;
+}
+
+#tab2 h3 {
+
+
+}
+
+#column {
+width: 150px;
+height: 100%;
+background-color: #7F0000;
+position: absolute;
+left: 323px;
+border-left: 5px solid red;
+}
 
 #main {
-width: 525px;
-height: 100%;
+width: 600px;
+left: -100px;
 background-color: white;
 
-top: -10px;
+border-left: 5px solid red;
+
 position: relative;
 margin-left: auto;
 margin-right: auto;
-border-left: 5px solid #BF0000;
-border-right: 5px solid #BF0000;
+
 }
 
 
+#column ul {
+  list-style: none;
+  position: relative;
+  top: 5px;
+}
 
+#column ul li {
+  margin-bottom: -20px;
+}
+#column ul li p {
+  color: #00BDFF;
+  position: relative;
+ font-family: 'IM Fell French Canon', serif;
+ font-size: 14px;
+  top: 25px;
+  left: -20px;
+
+}
+#column ul li a {
+  color: red;
+  font-family: 'IM Fell French Canon SC';
+  font-size: 15px;
+  position: relative;
+  left: -20px;
+  top: 40px;
+}
 
 #main h1{
   font-family: IM Fell French Canon SC;
-  font-size: 22px;
+  font-size: 32px;
   color: black;
   position: relative;
-  top: 80px;
-  left: 100px;
+  font-weight: bold;
+  top: 40px;
+  left: 30px;
 }
 
 #main h3{
 font-family: 'IM Fell French Canon', serif;
   font-size: 15px;
   position: relative;
-  top: 75px;
-  left: 120px;
+  top: 35px;
+  left: 50px;
 }
 
 #main h4{
 
 }
-
-#pic {
-  background-image: url('../img/me.jpg');
-  background-repeat: no-repeat;
-  height: 153px;
-  width: 150px;
-  position: relative;
-  top: 100px;
-  left: 300px;
-  border: 1px solid black;
-  box-shadow: 10px 10px 10px #777777;
-}
-
-#about-me {
-  width: 220px;
-  position: relative;
-  left: 60px;
-  top: -38px;
+#main p{
   color: black;
-  font-family: 'IM Fell French Canon';
- font-size: 14px;
- text-indent: 40px;
- text-align: justify;
-
-}
-
-#about-me2 {
-  color: black;
-  font-family: 'IM Fell French Canon';
-  font-size: 14px;
-  width: 380px;
+  font-family: 'IM Fell French Canon', serif;
   position: relative;
-  left: 60px;
-  top: -49px;
-  text-indent: 40px;
-  text-align: justify;
+  top: 45px;
+  left: 30px;
+  width: 500px;
+  height: 500px;
+
 }

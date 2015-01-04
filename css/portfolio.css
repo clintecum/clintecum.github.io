@@ -49,7 +49,7 @@ body {
   width: 129%;
   height: 650px;
   position: fixed;
-  background-image: url('../img/bkg-about.jpg');
+  background-image: url('../img/back2.png');
   background-size: 100%;
   background-repeat: no-repeat;
   margin-left: 55px;
@@ -118,7 +118,7 @@ left: -5px;
 
 
 #main {
-width: 525px;
+width: 650px;
 height: 100%;
 background-color: white;
 
@@ -153,40 +153,24 @@ font-family: 'IM Fell French Canon', serif;
 #main h4{
 
 }
+#main p{
+  color: black;
+  font-family: 'IM Fell French Canon';
+ font-size: 18px;
+  position: relative;
+  top: -50px;
+  left: 100px;
+  width: 370px;
 
+
+}
 #pic {
-  background-image: url('../img/me.jpg');
-  background-repeat: no-repeat;
+  background-image: url('file:///Users/cf/Desktop/blog/img/me.jpg');
   height: 153px;
-  width: 150px;
+  width: 153px;
   position: relative;
   top: 100px;
-  left: 300px;
-  border: 1px solid black;
+  left: 600px;
+  border: 2px solid #7F0000;
   box-shadow: 10px 10px 10px #777777;
-}
-
-#about-me {
-  width: 220px;
-  position: relative;
-  left: 60px;
-  top: -38px;
-  color: black;
-  font-family: 'IM Fell French Canon';
- font-size: 14px;
- text-indent: 40px;
- text-align: justify;
-
-}
-
-#about-me2 {
-  color: black;
-  font-family: 'IM Fell French Canon';
-  font-size: 14px;
-  width: 380px;
-  position: relative;
-  left: 60px;
-  top: -49px;
-  text-indent: 40px;
-  text-align: justify;
 }
