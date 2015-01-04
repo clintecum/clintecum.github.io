@@ -1,11 +1,11 @@
 body {
-  width: 1080px;
+  width: 600px;
   height: 2000px;
   position: absolute;
 }
 
 #content {
-width: 650px;
+width: 600px;
 height: 100%;
 background-color: white;
 top: -10px;
@@ -39,4 +39,13 @@ font-family: 'IM Fell French Canon', serif;
   left: 45px;
   width: 470px;
 
+}
+#content h2{
+  font-family: 'IM Fell French Canon';
+  font-size: 18px;
+  position: relative;
+  font-style: italic;
+  font-weight: normal;
+  top: 40px;
+  left: 45px;
 }
