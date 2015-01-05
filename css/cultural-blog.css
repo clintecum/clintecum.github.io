@@ -12,7 +12,7 @@ body {
   top: -30px;
   left: -70px;
   position: fixed;
-  z-index: 99999;
+  z-index: 99998;
   border-bottom: 12px solid red;
 }
 
@@ -54,7 +54,7 @@ body {
 #wrapper-box {
   position: relative;
   width: 525px;
-
+  z-index: 99999;
   margin-top: 100px;
   left: 50px;
   top: 90px;
@@ -65,15 +65,13 @@ body {
   font-size: 42px;
   position: relative;
   top: -305px;
-  left: 620px;
   font-family: 'Jacques Francois Shadow';
-  width: 650px;
 }
 
 #title h1{
 position: relative;
 top: -5px;
-
+text-align: center;
 }
 
 
@@ -86,7 +84,7 @@ width: 310px;
 top: -385px;
 float: right;
 margin-right: 90px;
- z-index: 99900;
+ z-index: 99996;
 }
 
 
@@ -115,7 +113,6 @@ z-index: 99995;
   color: red;
   position: relative;
   left: 35px;
-
   font-family: 'IM Fell French Canon SC';
   font-size: 18px;
   top: 9px;
@@ -124,7 +121,7 @@ z-index: 99995;
   width: 145%;
   height: 16px;
   background-color: red;
-  z-index: 99998;
+  z-index: 99997;
   position: fixed;
   top: 150px;
   left: -10px;
@@ -164,7 +161,7 @@ left: -200px;
 position: relative;
 margin-left: auto;
 margin-right: auto;
-z-index: 99996;
+z-index: 99993;
 }
 
 
@@ -216,4 +213,16 @@ font-family: 'IM Fell French Canon', serif;
   width: 500px;
   height: 500px;
 
+}
+
+
+#footer {
+  position: fixed;
+  top: 775px;
+  width: 300%;
+  height: 120px;
+  background-color: black;
+  z-index: 99994;
+  left: -100px;
+  border-top: 8px solid red;
 }

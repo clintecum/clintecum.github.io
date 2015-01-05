@@ -12,7 +12,7 @@ body {
   top: -30px;
   left: -70px;
   position: fixed;
-  z-index: 99998;
+  z-index: 99997;
   border-bottom: 10px solid red;
 }
 
@@ -52,12 +52,12 @@ body {
 }
 
 #wrapper-box {
-  position: relative;
+  position: fixed;
   width: 525px;
-  z-index: 99999;
+  z-index: 99980;
   margin-top: 100px;
-  left: 50px;
-  top: 90px;
+  left: -25px;
+  top: 110px;
   height: 200px;
 
 }
@@ -66,7 +66,7 @@ body {
   color: red;
   font-size: 42px;
   position: relative;
-  top: -350px;
+  top: -50px;
   font-family: 'Jacques Francois Shadow';
 }
 
@@ -83,7 +83,7 @@ text-align: center;
 position: relative;
 height: 50px;
 width: 310px;
-top: -485px;
+top: -124px;
 float: right;
 margin-right: 90px;
 
@@ -125,7 +125,7 @@ top: 7px;
   width: 145%;
   height: 14px;
   background-color: red;
-  z-index: 99997;
+  z-index: 99998;
   position: fixed;
   top: 152px;
   left: -10px;
@@ -156,18 +156,7 @@ left: 323px;
 border-left: 5px solid red;
 }
 
-#main {
-width: 780px;
-background-color: white;
-height: 100%;
-top: 23px;
-left: -200px;
-position: relative;
-margin-left: auto;
-margin-right: auto;
-z-index: 99996;
-clear: both;
-}
+
 
 
 #links p {
@@ -227,7 +216,44 @@ font-family: 'IM Fell French Canon', serif;
   width: 300%;
   height: 120px;
   background-color: black;
- z-index: 99993;
+ z-index: 99996;
   left: -100px;
   border-top: 8px solid red;
 }
+
+#container {
+position: relative;
+width: 950px;
+height: 800px;
+margin-left: auto;
+margin-right: auto;
+clear: both;
+
+}
+
+#blognav {
+position: relative;
+float: left;
+background-color: red;
+width: 150px;
+z-index: 99999;
+display: inline-block;
+
+}
+#main {
+width: 780px;
+background-color: white;
+height: 800px;
+top: 23px;
+display: inline-block;
+position: relative;
+float: right;
+z-index: 99995;
+
+}
+#blognav a {
+
+}
+#content #container #blognav a:hover {
+  color: yellow;
+  }
