@@ -12,7 +12,7 @@ body {
   top: -30px;
   left: -70px;
   position: fixed;
-  z-index: 99999;
+  z-index: 99996;
   border-bottom: 10px solid red;
 }
 
@@ -85,6 +85,7 @@ height: 50px;
 width: 310px;
 top: -385px;
 float: right;
+margin-right: 70px;
 
 }
 
@@ -97,13 +98,23 @@ position: relative;
 top: 6px;
 }
 #tab1 {
+  display: inline-block;
+  width: 135px;
+  height: 30px;
    background-color: #7F0000;
+   border-bottom: 2px inset #7F0000;
+border-top: 2px inset #7F0000;
+border-left: 3px inset #7F0000;
+border-right: 3px inset #7F0000;
   position: relative;
-  top: 6px;
+  top: 7px;
+  z-index: 1;
 }
 #tab2 {
   background-color: red;
-
+  border-top: 2px outset red;
+border-left: 3px outset red;
+border-right: 3px outset red;
 }
 #tab1 a {
   text-decoration: none;
@@ -115,6 +126,17 @@ top: 6px;
   font-size: 18px;
   top: 9px;
 }
+#bar{
+  width: 125.5%;
+  height: 12px;
+  background-color: red;
+  z-index: 99999;
+  position: relative;
+  top: 145px;
+  left: -10px;
+}
+
+
 #spantab {
   font-family: 'IM Fell French Canon SC';
   font-size: 18px;
@@ -147,7 +169,7 @@ left: -200px;
 position: relative;
 margin-left: auto;
 margin-right: auto;
-z-index: 99999;
+z-index: 99998;
 }
 
 
