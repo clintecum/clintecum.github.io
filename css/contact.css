@@ -2,6 +2,8 @@ body {
   width: 1080px;
   height: 1000px;
   position: absolute;
+  background-color: black;
+  overflow-y: hidden;
 }
 
 #header {
@@ -65,6 +67,7 @@ body {
   margin-top: 100px;
   left: 50px;
   top: 90px;
+  z-index: 99998;
 }
 
 #title {
@@ -72,30 +75,24 @@ body {
   font-size: 42px;
   position: relative;
   top: -305px;
-  left: 620px;
-  font-family: Jacques Francois Shadow;
-  width: 650px;
+  font-family: 'Jacques Francois Shadow';
 }
 
 #title h1{
 position: relative;
 top: -5px;
-
+text-align: center;
 }
-
-
-
-
 
 
 #main {
 width: 400px;
-height: 100%;
-background-color: white;
+height: 690px;
+background: linear-gradient(black, #158DD9, #07324C, black, #083A59);
 top: -10px;
 position: relative;
-left: 1100px;
-
+margin-left: auto;
+margin-right: auto;
 border-left: 5px solid #BF0000;
 border-right: 5px solid #BF0000;
 }
@@ -107,15 +104,18 @@ border-right: 5px solid #BF0000;
   top: 100px;
 }
 #social li a {
-  color: purple;
-  font-family: "IM Fell French Canon";
-  font-size: 20px;
+  color: #E5E30B;
+  font-family: "Playball";
+  font-size: 24px;
 }
 #social ul li {
   margin-top: 12px;
   position: relative;
-  left: 40px;
+  left: 115px;
   top: 25px;
+}
+#social ul {
+  list-style-type: none;
 }
 
 
@@ -141,12 +141,22 @@ font-family: 'IM Fell French Canon', serif;
 }
 #main p{
   color: black;
-  font-family: 'IM Fell French Canon';
+  font-family: 'Merienda';
  font-size: 18px;
   position: relative;
-  top: -750px;
+  top: 110px;
+  left: 45px;
+  width: 320px;
+
+
+}
+#footer {
+  position: fixed;
+  top: 775px;
+  width: 300%;
+  height: 120px;
+  background-color: black;
+ z-index: 99999;
   left: -100px;
-  width: 370px;
-
-
+  border-top: 4px solid red;
 }
