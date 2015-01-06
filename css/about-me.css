@@ -66,6 +66,7 @@ body {
   margin-top: 100px;
   left: 50px;
   top: 90px;
+  z-index: 99998;
 }
 
 #title {
