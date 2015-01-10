@@ -1,0 +1,56 @@
+.box{
+  height:105px;
+  width: 65px;
+  background-color: pink;
+  margin-left: 5px;
+  display: inline-block;
+  margin-top:50px;
+  position: relative;
+  top:-220px;
+  left:42px;
+}
+
+
+#one{
+background-image: url('../img/mini-home.png');
+background-repeat: no-repeat;
+}
+#one:hover {
+  background-image: url('../img/mh-home.png');
+  background-repeat: no-repeat;
+}
+#two {
+background-image: url('../img/mini-blog.png');
+background-repeat: no-repeat;
+}
+#two:hover {
+  background-image: url('../img/mh-blog.png');
+  background-repeat: no-repeat;
+}
+
+#three {
+background-image: url('../img/mini-portfolio.png');
+background-repeat: no-repeat;
+}
+#three:hover {
+  background-image: url('../img/mh-portfolio.png');
+  background-repeat: no-repeat;
+}
+
+
+#four {
+background-image: url('../img/mini-about.png');
+background-repeat: no-repeat;
+}
+#four:hover {
+  background-image: url('../img/mh-about.png');
+  background-repeat: no-repeat;
+}
+#five {
+background-image: url('../img/mini-contact.png');
+background-repeat: no-repeat;
+}
+#five:hover {
+  background-image: url('../img/mh-contact.png');
+  background-repeat: no-repeat;
+}

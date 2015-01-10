@@ -1,0 +1,97 @@
+body{
+  width: 70em;
+  height: 60em;
+  position: fixed;
+  background-image: url('../img/bkg-index.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#title {
+  position: fixed;
+  top: -2px;
+  left: 460px;
+
+  height: 50px;
+  width: 500px;
+  z-index: 99999;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'IM Fell French Canon SC', sans-serif;
+  font-size: 28px;
+  font-style: italic;
+  color: red;
+  position: fixed;
+}
+
+nav {
+  width: 200%;
+  height: 30%;
+  background-color: black;
+  position: fixed;
+  left: -40px;
+  top: -10px;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.nav {
+  height:117px;
+  width: 75px;
+  margin-left: 12px;
+  left: 19.5%;
+  position: relative;
+  top: 17px;
+  display: inline-block;
+  margin-top:50px;
+  overflow: auto;
+}
+
+#n-one{
+background-image: url('../img/luther-blog.png');
+background-repeat: no-repeat;
+}
+#n-one:hover {
+  background-image: url('../img/hov-blog.png');
+  background-repeat: no-repeat;
+}
+
+#n-two {
+background-image: url('../img/hegel-portfolio.png');
+background-repeat: no-repeat;
+}
+#n-two:hover {
+  background-image: url('../img/hov-portfolio.png');
+  background-repeat: no-repeat;
+}
+
+#n-three {
+background-image: url('../img/lukacs-about.png');
+background-repeat: no-repeat;
+}
+#n-three:hover {
+  background-image: url('../img/hov-about.png');
+  background-repeat: no-repeat;
+}
+
+#n-four {
+background-image: url('../img/hammurabi-goals.png');
+background-repeat: no-repeat;
+}
+#n-four:hover {
+  background-image: url('../img/hov-goals.png');
+  background-repeat: no-repeat;
+}
+#n-five {
+background-image: url('../img/ibsen-contact.png');
+background-repeat: no-repeat;
+}
+#n-five:hover {
+  background-image: url('../img/hov-contact.png');
+  background-repeat: no-repeat;
+}

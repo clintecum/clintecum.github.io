@@ -121,15 +121,17 @@ left: -5px;
 #main {
 width: 525px;
 height: 690px;
-background: linear-gradient(black, #158DD9, #07324C, black, #083A59);
+background-color: black;
+opacity: .7;
 
-top: -10px;
+top: 10px;
 position: relative;
 margin-left: auto;
 margin-right: auto;
-border-left: 5px inset #083A59;
-border-right: 5px outset #083A59;
-box-shadow: 8px 8px 8px black;
+border-bottom-right-radius: 60px 90px;
+border-top-left-radius: 180px 180px;
+border-top-right-radius: 180px 180px;
+box-shadow: 8px 8px 8px 8px black;
 }
 
 

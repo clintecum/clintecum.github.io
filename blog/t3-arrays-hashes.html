@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>clintecum.github.io</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/blog-template.css">
+
+   <link href='http://fonts.googleapis.com/css?family=Average|Oswald' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=IM+Fell+French+Canon:400,400italic' rel='stylesheet' type='text/css'>
+  </head>
+
+
+
+  <body>
+
+  <div id="links-left">
+        <p>Week One</p>
+        <a href="../blog/c1-chefs-kitchen.html">Fireside Chat</a><br>
+        <a href="../blog/t1-git-blog.html">Version Control with git and Github</a>
+        <p>Week Two</p>
+        <a href="../blog/t2-css-design.html">CSS Design: The Box Model</a>
+        <p>Week Three</p>
+        <a href="../blog/t3-arrays-hashes.html">Ruby Hashes and Arrays</a>
+
+  </div><!--close links-->
+
+
+<main>
+  <h3>January 9, 2015</h3>
+  <h1>Ruby Hashes and Arrays<h1>
+  <h2>What are hashes and arrays?</h2>
+  <p>Hashes and arrays are two built-in Ruby classes for containing collections of objects.  These collections are useful for storing objects which can then be sorted, filtered and manipulated towards a variety of productive ends with the methods provided by the Enumerable module.  Although similar in terms of what they do and closely connected in their get and set-style behaviors, hashes and arrays are different in some fundamental ways, and involve their own particular storage/retrieval, querying, and transformative techniques.</p>
+
+  <h2>"An array's job is to store other objects," <span class="title-ital">(The Well-Grounded Rubyist)</span></h2>
+  <p>Arrays are ordered collections of objects: you can select objects from the collection based on a zero-based numerical index.</p>
+  <p>Arrays are useful for:
+<ol>
+  <li>Storing data</li>
+  <li>Manipulating large amounts of data in lists</li>
+  <li>Querying data</li>
+</ol>
+  </p>
+<p>In Ruby an array is a dynamic object whose size can grow over time.</p>
+<p>A Ruby array is also heterogeneous in terms of the data types that it can store (NOTE: an array technically stores object references, not objects themselves - except for <span class="courier">Fixnum</span> values).
+</p>
+
+  <h2>"Hashes are sometimes called dictionaries or associative arrays in other languages," <span class="title-ital">(The Well-Grounded Rubyist)</span></h2>
+  <p>Whereas objects in arrays are stored in a collection based on a numerical index, hashes are unordered: "they have no idea of what their first, last or nth element is."
+  </p>
+  <p>They store objects in pairs consisting of a key and an index.  For example:
+    <!-- HTML generated using hilite.me --><div class="codeblock" style="background: #202020; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">#2008 Potash prices in Peruvian Nueva Sol (PEN) per metric tonne or PEN/t</span>
+
+<span style="color: #3677a9">2008</span><span style="color: #d0d0d0">_potash_prices</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">{</span>
+  <span style="color: #ed9d13">&quot;January&quot;</span> <span style="color: #d0d0d0">=&gt;</span> <span style="color: #3677a9">1252</span><span style="color: #d0d0d0">,</span>
+  <span style="color: #ed9d13">&quot;February&quot;</span> <span style="color: #d0d0d0">=&gt;</span> <span style="color: #3677a9">1375</span><span style="color: #d0d0d0">,</span>
+  <span style="color: #ed9d13">&quot;March&quot;</span> <span style="color: #d0d0d0">=&gt;</span> <span style="color: #3677a9">1543</span><span style="color: #d0d0d0">,</span>
+  <span style="color: #ed9d13">&quot;April&quot;</span> <span style="color: #d0d0d0">=&gt;</span> <span style="color: #3677a9">1680</span><span style="color: #d0d0d0">,</span>
+  <span style="color: #ed9d13">&quot;May&quot;</span> <span style="color: #d0d0d0">=&gt;</span> <span style="color: #3677a9">1744</span><span style="color: #d0d0d0">,</span>
+  <span style="color: #ed9d13">&quot;June&quot;</span> <span style="color: #d0d0d0">=&gt;</span> <span style="color: #3677a9">1865</span><span style="color: #d0d0d0">,</span>
+  <span style="color: #ed9d13">&quot;July&quot;</span> <span style="color: #d0d0d0">=&gt;</span> <span style="color: #3677a9">1965</span><span style="color: #d0d0d0">,</span>
+  <span style="color: #ed9d13">&quot;August&quot;</span> <span style="color: #d0d0d0">=&gt;</span> <span style="color: #3677a9">2106</span><span style="color: #d0d0d0">,</span>
+  <span style="color: #ed9d13">&quot;September&quot;</span> <span style="color: #d0d0d0">=&gt;</span> <span style="color: #3677a9">2219</span><span style="color: #d0d0d0">,</span>
+  <span style="color: #ed9d13">&quot;October&quot;</span> <span style="color: #d0d0d0">=&gt;</span> <span style="color: #3677a9">2567</span><span style="color: #d0d0d0">,</span>
+  <span style="color: #ed9d13">&quot;November&quot;</span> <span style="color: #d0d0d0">=&gt;</span> <span style="color: #3677a9">2678</span><span style="color: #d0d0d0">,</span>
+  <span style="color: #ed9d13">&quot;December&quot;</span> <span style="color: #d0d0d0">=&gt;</span> <span style="color: #3677a9">2770</span>
+<span style="color: #d0d0d0">}</span>
+</pre></div>
+</p>
+  <p>Hashes are useful for:
+    <ol>
+      <li>Simple retrieval with key/value pair</li>
+      <li>More complex filtering and selection operations</li>
+    </ol>
+  </p>
+<p>What was the price of Potash in March 2008?
+
+</p>
+
+  <p>
+<!-- HTML generated using hilite.me --><div class="codeblock" style="background: #202020; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #d0d0d0">state_hash</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">{}</span>
+           <span style="color: #999999; font-style: italic">#key        #value</span>
+<span style="color: #d0d0d0">state_hash[</span><span style="color: #ed9d13">&quot;Kansas&quot;</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #ed9d13">&quot;KS&quot;</span>
+<span style="color: #999999; font-style: italic">#or</span>
+<span style="color: #d0d0d0">state_hash.store(</span><span style="color: #ed9d13">&quot;Kansas&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #ed9d13">&quot;KS&quot;</span><span style="color: #d0d0d0">)</span>
+
+<span style="color: #999999; font-style: italic">#retrieve value based on key with [] method</span>
+<span style="color: #d0d0d0">state_hash[</span><span style="color: #ed9d13">&quot;Kansas&quot;</span><span style="color: #d0d0d0">]</span>
+</pre></div>
+</p>
+
+  <p>Hashes can be passed as final method arguments without curly brackets to make code cleaner:</p>
+<p><!-- HTML generated using hilite.me --><div class="codeblock" style="background: #202020; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">#showing how hashes can be passed as final method</span>
+<span style="color: #999999; font-style: italic">#arguments with example of city_database method</span>
+
+<span style="color: #6ab825; font-weight: bold">def</span> <span style="color: #447fcf">city_database</span><span style="color: #d0d0d0">(</span><span style="color: #24909d">name</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">info)</span>
+  <span style="color: #d0d0d0">c</span> <span style="color: #d0d0d0">=</span> <span style="color: #40ffff">City</span><span style="color: #d0d0d0">.new</span>
+  <span style="color: #d0d0d0">c.name</span> <span style="color: #d0d0d0">=</span> <span style="color: #24909d">name</span>
+  <span style="color: #d0d0d0">c.state</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">info[</span><span style="color: #ed9d13">:state</span><span style="color: #d0d0d0">]</span>
+  <span style="color: #d0d0d0">c.population</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">info[</span><span style="color: #ed9d13">:population</span><span style="color: #d0d0d0">]</span>
+  <span style="color: #d0d0d0">c.nickname</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">info[</span><span style="color: #ed9d13">:nickname</span><span style="color: #d0d0d0">]</span>
+<span style="color: #6ab825; font-weight: bold">end</span>
+
+<span style="color: #d0d0d0">city_database(</span><span style="color: #ed9d13">&quot;Kansas City&quot;</span><span style="color: #d0d0d0">,</span>
+  <span style="color: #ed9d13">state</span><span style="color: #d0d0d0">:</span> <span style="color: #ed9d13">&quot;Missouri&quot;</span><span style="color: #d0d0d0">,</span>
+  <span style="color: #ed9d13">population</span><span style="color: #d0d0d0">:</span> <span style="color: #3677a9">2300000</span><span style="color: #d0d0d0">,</span>
+  <span style="color: #ed9d13">nickname</span><span style="color: #d0d0d0">:</span> <span style="color: #ed9d13">&quot;Possumtrot&quot;</span><span style="color: #d0d0d0">)</span>
+</pre></div>
+</p>
+
+
+
+
+</main>
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,133 @@
+body {
+  width: 70em;
+  height: 60em;
+  position: fixed;
+  margin-left: 5%;
+  margin-right: 5%;
+  top: 20px;
+  background-image: url('../img/background.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#header {
+  width: 125%;
+  height: 170px;
+  background-color: black;
+  position: absolute;
+  top: -30px;
+  left: -70px
+}
+
+#header h3 {
+  position: absolute;
+  top: -10px;
+  color: red;
+  left:425px;
+  font-family: 'Almendra';
+}
+
+#main-box {
+  width: 610px;
+  height: 170px;
+  background-color: black;
+  position: relative;
+  left: 290px;
+  top: -50px;
+}
+
+#main-box h1 {
+  color: white;
+  position: relative;
+  left: 75px;
+  top: 8px;
+  font-family: 'IM Fell French Canon SC', sans-serif;
+  font-size: 28px;
+  font-style: italic;
+  color: red;
+}
+
+.box{
+  height:117px;
+  width: 75px;
+  background-color: pink;
+  margin-left: 15px;
+  display: inline-block;
+  margin-top:50px;
+  position: relative;
+  top:-220px;
+  left:42px;
+}
+
+.links {
+  font-family: 'Almendra', sans-serif;
+  font-size: 18px;
+  color: red;
+  position: relative;
+  top: 105px;
+  left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.links:hover {
+  color: pink;
+}
+
+#one{
+background-image: url('../img/luther-blog.png');
+background-repeat: no-repeat;
+}
+#one:hover {
+  background-image: url('../img/hov-blog.png');
+  background-repeat: no-repeat;
+}
+
+#two {
+background-image: url('../img/hegel-portfolio.png');
+background-repeat: no-repeat;
+}
+#two:hover {
+  background-image: url('../img/hov-portfolio.png');
+  background-repeat: no-repeat;
+}
+
+#three {
+background-image: url('../img/lukacs-about.png');
+background-repeat: no-repeat;
+}
+#three:hover {
+  background-image: url('../img/hov-about.png');
+  background-repeat: no-repeat;
+}
+
+#four {
+background-image: url('../img/hammurabi-goals.png');
+background-repeat: no-repeat;
+}
+#four:hover {
+  background-image: url('../img/hov-goals.png');
+  background-repeat: no-repeat;
+}
+#five {
+background-image: url('../img/ibsen-contact.png');
+background-repeat: no-repeat;
+}
+#five:hover {
+  background-image: url('../img/hov-contact.png');
+  background-repeat: no-repeat;
+}
+#wrapper-box {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 525px;
+  left: 50px;
+}
+
+#footer {
+
+}
+
+.wrap {
+
+}

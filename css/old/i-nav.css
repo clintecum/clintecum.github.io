@@ -1,0 +1,55 @@
+.nav {
+  height:117px;
+  width: 75px;
+  background-color: pink;
+  left: 22%;
+  position: relative;
+  top: 17px;
+  display: inline-block;
+  margin-top:50px;
+  overflow: auto;
+}
+
+#n-one{
+background-image: url('../img/luther-blog.png');
+background-repeat: no-repeat;
+}
+#n-one:hover {
+  background-image: url('../img/hov-blog.png');
+  background-repeat: no-repeat;
+}
+
+#n-two {
+background-image: url('../img/hegel-portfolio.png');
+background-repeat: no-repeat;
+}
+#n-two:hover {
+  background-image: url('../img/hov-portfolio.png');
+  background-repeat: no-repeat;
+}
+
+#n-three {
+background-image: url('../img/lukacs-about.png');
+background-repeat: no-repeat;
+}
+#n-three:hover {
+  background-image: url('../img/hov-about.png');
+  background-repeat: no-repeat;
+}
+
+#n-four {
+background-image: url('../img/hammurabi-goals.png');
+background-repeat: no-repeat;
+}
+#n-four:hover {
+  background-image: url('../img/hov-goals.png');
+  background-repeat: no-repeat;
+}
+#n-five {
+background-image: url('../img/ibsen-contact.png');
+background-repeat: no-repeat;
+}
+#n-five:hover {
+  background-image: url('../img/hov-contact.png');
+  background-repeat: no-repeat;
+}
