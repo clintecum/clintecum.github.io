@@ -79,9 +79,10 @@ nav {
   width: 405px;
   padding-left: 25px;
 float: left;
+left: 10px;
   position: relative;
   margin-top: -10px;
-  top: 67px;
+  top: 60px;
 clear: both;
 display: inline-block;
 }
@@ -96,7 +97,7 @@ color: red;
 clear:both;
 display: inline-block;
 
-font-family: "Nothing You Could Do";
+font-family: "Jacques Francois Shadow";
 font-size: 60px;
 
 }
@@ -124,11 +125,11 @@ address a:hover{
 
 #title{
   position: relative;
-top:1px;
+top:10px;
   font-family: "IM Fell French Canon SC";
- font-family: "Herr Von Muellerhoff";
+
   margin-left :20px;
-  font-size: 44px;
-  left: -410px;
+  font-size: 26px;
+  left: -420px;
   z-index: 99999;
 }
