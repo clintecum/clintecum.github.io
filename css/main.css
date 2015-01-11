@@ -10,8 +10,9 @@ body{
 #title {
   position: fixed;
   top: -2px;
-  left: 460px;
-
+  margin-left: auto;
+  margin-right: auto;
+left: 34%;
   height: 50px;
   width: 500px;
   z-index: 99999;
