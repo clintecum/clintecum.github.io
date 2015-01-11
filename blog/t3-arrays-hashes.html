@@ -22,17 +22,8 @@
         <a href="../blog/t2-css-design.html">CSS Design: The Box Model</a>
         <p>Week Three</p>
         <a href="../blog/t3-arrays-hashes.html">Ruby Hashes and Arrays</a>
-        <p>Weekly Subtopics</p>
-        <ul>
-          <li style="font-size:9px;" class="sublinks"><a href=“#create_array”>Create a new array</a></li>
-          <li style="font-size:9px;" class="sublinks"><a href=“#sort_array”>Sort an array</a></li>
-          <li style="font-size:12px;" class="sublinks"><a href=“#add_to_array”>Add to an array</a></li>
-          <li style="font-size:12px;" class="sublinks"><a href=“#delete_from_array”>Delete from an array</a></li>
-          <li class="sublinks"><a href=“#count_array”>Count elements in an array</a></li>
-          <li class="sublinks"><a href=“#create_hash”>Create a new hash object</a></li>
-          <li class="sublinks"><a href=“#retrieve_value”>Retrieve value from hash with the key</a></li>
-          <li class="sublinks"><a href=“#query_hash”>Query hash for keys if values match</a></li>
-        </ul>
+
+
 
   </div><!--close links-->
 
@@ -51,17 +42,17 @@
   <li>Manipulating large amounts of data in lists</li>
   <li>Querying data</li>
 </ol>
-  </p><a name=“create_array”>
-<p>Creating a new array is easy:</p>
-</a>
+  </p>
+<p>Creating a new array is easy:<a name=“createarray”></a></p>
+
 <!-- HTML generated using hilite.me --><div class="codeblock" style="background: #202020; overflow:auto;width:630px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #24909d">Array</span><span style="color: #d0d0d0">.new</span>
 <span style="color: #999999; font-style: italic">#or</span>
 <span style="color: #d0d0d0">array_name</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">[]</span>
 <span style="color: #999999; font-style: italic">#or create an array filled with elements</span>
 <span style="color: #d0d0d0">friends</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">[</span><span style="color: #ed9d13">&quot;Ed&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #ed9d13">&quot;Sue&quot;</span><span style="color: #d0d0d0">,</span> <span style="color: #ed9d13">&quot;Mary&quot;</span><span style="color: #d0d0d0">,</span><span style="color: #ed9d13">&quot;Ty&quot;</span><span style="color: #d0d0d0">,</span><span style="color: #ed9d13">&quot;Bo&quot;</span><span style="color: #d0d0d0">,</span><span style="color: #ed9d13">&quot;Ray&quot;</span><span style="color: #d0d0d0">,</span><span style="color: #ed9d13">&quot;Jessica&quot;</span><span style="color: #d0d0d0">,</span><span style="color: #ed9d13">&quot;Carl&quot;</span><span style="color: #d0d0d0">,</span><span style="color: #ed9d13">&quot;Maurice&quot;</span><span style="color: #d0d0d0">,</span><span style="color: #ed9d13">&quot;Ted&quot;</span><span style="color: #d0d0d0">,]</span>
 </pre></div>
-<p>How many friends do I have?</p>
-<a name=“count_array”></a>
+<p>How many friends do I have?<a name=“count_array”></a></p>
+
 <!-- HTML generated using hilite.me --><div class="codeblock" style="background: #202020; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #24909d">puts</span> <span style="color: #d0d0d0">friends.length</span>
 
 <span style="color: #999999; font-style: italic">#run code in IRB</span>
@@ -69,8 +60,8 @@
 <span style="color: #3677a9">10</span>
 </pre></div>
 
-<p>Sort your list of friends' names alphabetically:</p>
-<a name=“sort_array”></a>
+<p>Sort your list of friends names alphabetically:<a name=“sort_array”></a></p>
+
 <!-- HTML generated using hilite.me --><div class="codeblock" style="background: #202020; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #24909d">puts</span> <span style="color: #d0d0d0">friends.sort</span>
 
 <span style="color: #d0d0d0">&gt;</span> <span style="color: #d0d0d0">ruby</span> <span style="color: #d0d0d0">array_example.rb</span>
@@ -91,9 +82,9 @@
 
 </p>
 <h4>In Ruby an array is a dynamic object whose size can grow or contract over time.</h4>
-<p>For instance you can delete friends whose names are too long:
+<p>For instance you can delete friends whose names are too long:<a name=“delete_from_array”></a>
 </p>
-<a name=“delete_from_array”></a>
+
 
 <!-- HTML generated using hilite.me --><div class="codeblock" style="background: #202020; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #d0d0d0">friends.delete_if</span> <span style="color: #d0d0d0">{|</span><span style="color: #24909d">name</span><span style="color: #d0d0d0">|</span> <span style="color: #24909d">name</span><span style="color: #d0d0d0">.size</span> <span style="color: #d0d0d0">&gt;</span> <span style="color: #3677a9">4</span><span style="color: #d0d0d0">}</span>
 
@@ -106,8 +97,8 @@
 <span style="color: #40ffff">Ted</span>
 </pre></div>
 
-<p>Or you can add new elements to an existing array:</p>
-<a name=“add_to_array”></a>
+<p>Or you can add new elements to an existing array:<a name=“add_to_array”></a></p>
+
 <!-- HTML generated using hilite.me --><div class="codeblock" style="background: #202020; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999999; font-style: italic">#Add the name of a new friend to your list</span>
 <span style="color: #d0d0d0">friends</span> <span style="color: #d0d0d0">&lt;&lt;</span> <span style="color: #ed9d13">&quot;Solomon&quot;</span>
 
@@ -134,7 +125,7 @@
   <p>Whereas objects in arrays are stored in a collection based on a numerical index, hashes are unordered: "they have no idea of what their first, last or nth element is."
   </p>
   <p>They store objects in pairs consisting of a key index and a value.  For example:
-<a name=“create_hash”></a>
+<a name=“create_hash”></a></p>
     <!-- HTML generated using hilite.me --><div class="codeblock" style="background: #202020; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #d0d0d0">state_hash</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">{}</span>
            <span style="color: #999999; font-style: italic">#key        #value</span>
 <span style="color: #d0d0d0">state_hash[</span><span style="color: #ed9d13">&quot;Kansas&quot;</span><span style="color: #d0d0d0">]</span> <span style="color: #d0d0d0">=</span> <span style="color: #ed9d13">&quot;KS&quot;</span>
@@ -149,7 +140,7 @@
 
 
 
-</p>
+
   <p>Hashes are useful for:
     <ol>
       <li>Simple retrieval with key/value pair</li>
