@@ -105,7 +105,8 @@ box-shadow: 8px 8px 8px 8px black;
   text-decoration: none;
 }
 #social li a:hover {
-  color: #A39C03;
+  color: blue;
+  font-size: 24px;
  }
 
 #social ul li {
