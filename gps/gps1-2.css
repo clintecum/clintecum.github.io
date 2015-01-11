@@ -1,0 +1,55 @@
+/* include your css here */
+    body{
+        width:960px;
+        background-color: #32437F;
+    }
+
+    header{
+        background-color: #192240;
+        color: white;
+    }
+
+    h1{
+        text-align:center;
+        font-family: "Oswald", sans-serif;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+    }
+
+    h4 {
+        font-family: Oxygen;
+        color: #464D4F;
+    }
+
+    section{
+        width:65%;
+        float:left;
+        background-color:#8D9BCB;
+        font-family: Oxygen;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #464D4F;
+    }
+
+    img {
+        max-width: 45%;
+        max-height: auto;
+    }
+
+    aside{
+        float:right;
+        background-color:#8D9BCB;
+        width:25%;
+        font-family: Oxygen;
+        padding-left: 5px;
+    }
+
+    footer{
+        background-color: #192240;
+        width: 100%;
+        clear: both;
+        font-family: Oxygen;
+    }
