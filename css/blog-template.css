@@ -119,14 +119,38 @@ text-indent: 35px;
 line-height: 30px;
 
 }
+.quote {
+  position: relative;
+  top: 90px;
+  left: 365px;
+  width: 500px;
+  text-indent: -5px;
+  font-style: italic;
+}
+.subpoints{
+  font-size: 16px;
+}
+.ref{
+  font-family: Average;
+  font-size: 10px;
+  color: blue;
+  position: relative;
+  top: -10px;
+  left: 4px;
+}
 
 .codeblock{
 position: relative;
   top: 95px;
-left: 305px;
+left:-50px;
   margin-bottom: 30px;
 }
-
+.codeblock2{
+position: relative;
+  top: 15px;
+left:-50px;
+  margin-bottom: 30px;
+}
 .title-ital {
   font-style: italic;
   font-size: 16px;
@@ -142,4 +166,48 @@ left: 305px;
   left: -40px;
   top: 5px;
 
+}
+
+main ul {
+  width: 540px;
+  left: 355px;
+  top: 90px;
+  font-family: Average;
+  position: relative;
+  line-height: 30px;
+}
+
+table {
+  font-family: Average;
+  font-size: 13px;
+  width: 600px;
+  position: relative;
+  left: 345px;
+  top: 90px;
+  border: 2px outset black;
+
+}
+.th-element {
+  border-bottom: 1px solid black;
+}
+th {
+  border-right: 1px solid black;
+}
+#th1 {
+  background-color: #8CB1C8
+}
+#th2 {
+  background-color: #8CB1C8
+}
+#th3 {
+  background-color: #8CB1C8
+}
+#th4 {
+  background-color: #8CB1C8
+}
+td {
+  padding-left: 7px;
+}
+.td-element {
+  border-bottom: 1px inset black;
 }
