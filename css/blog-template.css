@@ -119,6 +119,9 @@ text-indent: 35px;
 line-height: 30px;
 
 }
+.less-indent{
+  text-indent:1px;
+}
 .quote {
   position: relative;
   top: 90px;
@@ -149,6 +152,12 @@ left: 295px;
 position: relative;
   top: 15px;
 left:-50px;
+  margin-bottom: 30px;
+}
+.codeblock3{
+position: relative;
+  top: 105px;
+left: 345px;
   margin-bottom: 30px;
 }
 .title-ital {

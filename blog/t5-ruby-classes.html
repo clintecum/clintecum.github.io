@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>clintecum.github.io</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/blog-template.css">
+
+   <link href='http://fonts.googleapis.com/css?family=Average|Oswald' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=IM+Fell+French+Canon:400,400italic' rel='stylesheet' type='text/css'>
+  </head>
+
+
+
+  <body>
+
+  <div id="links-left">
+        <p>Week One</p>
+        <a href="../blog/c1-chefs-kitchen.html">Fireside Chat</a><br>
+        <a href="../blog/t1-git-blog.html">Version Control with git and Github</a>
+        <p>Week Two</p>
+        <a href="../blog/t2-css-design.html">CSS Design: The Box Model</a>
+        <p>Week Three</p>
+        <a href="../blog/t3-arrays-hashes.html">Ruby Hashes and Arrays</a><br>
+         <a href="../blog/c3_thinking_style.html">Abstract Random Thinking</a>
+          <p>Week Four</p>
+        <a href="../blog/t4-enumerable-methods.html">Ruby Methods: Enumerable#cycle</a><br>
+        <a href="../blog/c4-tech-issues.html">Age Discrimination in IT</a>
+        <p>Week Five</p>
+        <a href="../blog/t5-ruby-classes.html">Ruby Methods: Enumerable#cycle</a><br>
+        <a href="../blog/c5-feedback.html">Learning from Pair Programming Feedback</a>
+
+
+
+  </div><!--close links-->
+
+
+<main>
+  <h3>January 22, 2015</h3>
+  <h1>Modeling Real-World Objects<br> w/ Ruby Classes <h1>
+    <h4>Relations between objects and real world things</h4>
+      <p class="less-indent">Programming often requires thinking about how to map real-world objects onto systems of program objects like classes and methods using data structures such as hashes and arrays.  Programs that are based upon a model of real-world objects do not always necessarily need to be translated from the real-world object into code in the most rigid one-to-one correspondence in such a way that every part has its own mechanical equivalent in code.  A program merely needs to model the real-world object in a way that systematically produces the right effects and is internally consistent.</p>
+      <p class="less-indent">Imagine a problem domain for a program you are working on where the real-world object actually consists of many different objects, such as a receipt from a transaction or a medical record.  Each of these real-world things is populated with values from multiple categories of things and must be produced over and over again on sizeable scales.  Moreover, the values that must be returned for each specific category will vary on a case-by-case basis.  Mapping real-world objects to code first requires breaking a problem down into more manageable pieces in pseudocode.  Once the steps of a program have been identified in pseudocode, the actual process of coding a program should be fairly routine.</p>
+      <p class="less-indent">To demonstrate how a real-world object can be modeled into a Ruby program, I've created the following example of a receipt class that prints out a receipt to the console whenever a call is made to create a new receipt class object.  It is designed to mimic a customer transaction at a store with locations in seven states.  Calls for new receipt objects take two arguments: a hash representing quantities of specific items in a shopping cart, and a state abbreviation designating store location for tax purposes.  As it turns out, I needed to create seven different method definitions within the receipt class in order to accomplish the primary goal of printing a receipt that ends up looking like the following when you run the ruby file in Terminal:</p>
+      <p><!-- HTML generated using hilite.me --><div class="codeblock3" style="background: #ffffff; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888">blog [master] :&gt; ruby receipt.rb </span>
+
+<span style="color: #888888">              RECEIPT</span>
+<span style="color: #888888">         (from some store)</span>
+
+
+<span style="color: #888888">    QTY    ITEM             PRICE</span>
+
+<span style="color: #888888">     2     Bread            3.29 </span>
+<span style="color: #888888">     1     Apple            4.05 </span>
+<span style="color: #888888">     9     Pants            19.99 </span>
+<span style="color: #888888">       </span>
+
+<span style="color: #888888">               Subtotal   190.54</span>
+<span style="color: #888888">               Tax        11.49</span>
+<span style="color: #888888">               Total      202.03</span>
+</pre></div>
+</p>
+
+<h4><br>Pseudocoding</h4>
+<p><!-- HTML generated using hilite.me --><div class="codeblock3" style="background: #ffffff; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="font-style: italic">#Receipt class</span>
+
+<span style="font-style: italic">#Input: Class object initialized with shopping cart hash (key: item; value: quantity) and a state ID string</span>
+<span style="font-style: italic">#Output: Receipt printed to console</span>
+
+<span style="font-style: italic">#Initialize method:</span>
+<span style="font-style: italic">#initializes instance variables @shopping_cart and @state </span>
+
+<span style="font-style: italic">#prices method</span>
+<span style="font-style: italic">#stores price information in hash for use by instances of receipt class and inside other class receipt instance methods</span>
+
+<span style="font-style: italic">#tax method</span>
+<span style="font-style: italic">#serves same purpose as prices method--designating tax rate in one of eight states</span>
+<span style="font-style: italic">#checks instance variable @state and returns appropriate sales tax rate </span>
+
+<span style="font-style: italic">#subtotal method</span>
+<span style="font-style: italic">#iterates through two hashes to check for matches</span>
+<span style="font-style: italic">#if the key in shopping cart hash is equal to the key in pricelist hash, then item_qty is obtained from hash and converted to integer </span>
+<span style="font-style: italic">#quantity is multiplied by price for every item that matches during iteration and the results are added to an array called acc </span>
+<span style="font-style: italic">#returns sums of elements in acc array </span>
+
+<span style="font-style: italic">#total method</span>
+<span style="font-style: italic">#returns total by adding subtotal to tax objects</span>
+
+<span style="font-style: italic">#item_lines</span>
+<span style="font-style: italic">#follows same logic as subtotal method to prepare itemized line for purposes of printing things out nicely in console</span>
+
+<span style="font-style: italic">#print method</span>
+<span style="font-style: italic">#prints results from above methods to look like a receipt </span>
+
+<span style="font-style: italic">#verifies code by creating new object and calling print method</span>
+</pre></div>
+</p>
+
+
+ <h4><br>Example code: Receipt class</h4>
+      <p>
+        <!-- HTML generated using hilite.me --><div style="background: #ffffff" class="codeblock3";overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">class</span> <span style="color: #bb0066; font-weight: bold">Receipt</span>
+  <span style="color: #008800">attr_accessor</span> <span style="color: #aa6600; background-color: #fff0f0">:shopping_cart</span>
+
+  <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066bb; font-weight: bold">initialize</span>(shopping_cart, state)
+    <span style="color: #3333bb">@shopping_cart</span> = shopping_cart
+    <span style="color: #3333bb">@state</span> = state
+  <span style="color: #008800; font-weight: bold">end</span>
+
+  <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066bb; font-weight: bold">prices</span>
+     prices = {
+      <span style="color: #dd2200; background-color: #fff0f0">&quot;Bread&quot;</span> =&gt; <span style="color: #0000DD; font-weight: bold">3</span>.<span style="color: #0000DD; font-weight: bold">29</span>,
+      <span style="color: #dd2200; background-color: #fff0f0">&quot;Apple&quot;</span> =&gt; <span style="color: #0000DD; font-weight: bold">4</span>.<span style="color: #0000DD; font-weight: bold">05</span>,
+      <span style="color: #dd2200; background-color: #fff0f0">&quot;Pants&quot;</span> =&gt; <span style="color: #0000DD; font-weight: bold">19</span>.<span style="color: #0000DD; font-weight: bold">99</span>,
+    }
+  <span style="color: #008800; font-weight: bold">end</span>
+
+  <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066bb; font-weight: bold">tax</span>
+    tax_rates = {
+      <span style="color: #dd2200; background-color: #fff0f0">&quot;ND&quot;</span> =&gt; <span style="color: #0000DD; font-weight: bold">0</span>.<span style="color: #0000DD; font-weight: bold">0655</span>,
+      <span style="color: #dd2200; background-color: #fff0f0">&quot;KS&quot;</span> =&gt; <span style="color: #0000DD; font-weight: bold">0</span>.<span style="color: #0000DD; font-weight: bold">0815</span>,
+      <span style="color: #dd2200; background-color: #fff0f0">&quot;TX&quot;</span> =&gt; <span style="color: #0000DD; font-weight: bold">0</span>.<span style="color: #0000DD; font-weight: bold">0815</span>,
+      <span style="color: #dd2200; background-color: #fff0f0">&quot;OK&quot;</span> =&gt; <span style="color: #0000DD; font-weight: bold">0</span>.<span style="color: #0000DD; font-weight: bold">0872</span>,
+      <span style="color: #dd2200; background-color: #fff0f0">&quot;MO&quot;</span> =&gt; <span style="color: #0000DD; font-weight: bold">0</span>.<span style="color: #0000DD; font-weight: bold">0758</span>,
+      <span style="color: #dd2200; background-color: #fff0f0">&quot;NM&quot;</span> =&gt; <span style="color: #0000DD; font-weight: bold">0</span>.<span style="color: #0000DD; font-weight: bold">0726</span>,
+      <span style="color: #dd2200; background-color: #fff0f0">&quot;ME&quot;</span> =&gt; <span style="color: #0000DD; font-weight: bold">0</span>.<span style="color: #0000DD; font-weight: bold">0505</span>,
+      <span style="color: #dd2200; background-color: #fff0f0">&quot;ID&quot;</span> =&gt; <span style="color: #0000DD; font-weight: bold">0</span>.<span style="color: #0000DD; font-weight: bold">0603</span>,
+    }
+    <span style="color: #008800; font-weight: bold">if</span> tax_rates.include?(<span style="color: #dd2200; background-color: #fff0f0">&quot;</span><span style="color: #3333bb; background-color: #fff0f0">#{</span><span style="color: #3333bb">@state</span><span style="color: #3333bb; background-color: #fff0f0">}</span><span style="color: #dd2200; background-color: #fff0f0">&quot;</span>)
+      sales_tax = <span style="color: #003388">self</span>.subtotal * tax_rates[<span style="color: #3333bb">@state</span>]
+      sales_tax.round(<span style="color: #0000DD; font-weight: bold">2</span>)
+    <span style="color: #008800; font-weight: bold">else</span>
+    <span style="color: #008800; font-weight: bold">end</span>
+  <span style="color: #008800; font-weight: bold">end</span>
+
+  <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066bb; font-weight: bold">subtotal</span>
+    pricelist = <span style="color: #003388">self</span>.prices
+    acc = []
+    <span style="color: #3333bb">@shopping_cart</span>.each_key <span style="color: #008800; font-weight: bold">do</span> |item|
+      pricelist.each_key <span style="color: #008800; font-weight: bold">do</span> |key|
+        <span style="color: #008800; font-weight: bold">if</span> item == key
+          x = item
+          cart = <span style="color: #003388">self</span>.shopping_cart
+          item_qty_str = cart[item]
+          item_qty = item_qty_str.to_i
+          acc &lt;&lt; item_qty * pricelist[key]
+        <span style="color: #008800; font-weight: bold">end</span>
+      <span style="color: #008800; font-weight: bold">end</span>
+    <span style="color: #008800; font-weight: bold">end</span>
+    acc.map! {|v| v.round(<span style="color: #0000DD; font-weight: bold">2</span>)}
+    acc.inject{|sum,x| sum+=x}
+  <span style="color: #008800; font-weight: bold">end</span>
+
+  <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066bb; font-weight: bold">total</span>
+    total = <span style="color: #003388">self</span>.subtotal + <span style="color: #003388">self</span>.tax
+  <span style="color: #008800; font-weight: bold">end</span>
+
+ <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066bb; font-weight: bold">item_lines</span>
+    cart = <span style="color: #003388">self</span>.shopping_cart
+    pricelist = <span style="color: #003388">self</span>.prices
+    str = []
+    <span style="color: #3333bb">@shopping_cart</span>.each_key <span style="color: #008800; font-weight: bold">do</span> |item|
+      pricelist.each_key <span style="color: #008800; font-weight: bold">do</span> |key|
+        <span style="color: #008800; font-weight: bold">if</span> item == key
+          item_qty_str = cart[item]
+          item_qty = item_qty_str.to_i
+          str &lt;&lt; <span style="color: #dd2200; background-color: #fff0f0">&quot;     </span><span style="color: #3333bb; background-color: #fff0f0">#{</span>item_qty<span style="color: #3333bb; background-color: #fff0f0">}</span><span style="color: #dd2200; background-color: #fff0f0">     </span><span style="color: #3333bb; background-color: #fff0f0">#{</span>item<span style="color: #3333bb; background-color: #fff0f0">}</span><span style="color: #dd2200; background-color: #fff0f0">            </span><span style="color: #3333bb; background-color: #fff0f0">#{</span>pricelist[key]<span style="color: #3333bb; background-color: #fff0f0">}</span><span style="color: #dd2200; background-color: #fff0f0"> </span><span style="color: #0044dd; background-color: #fff0f0">\n</span><span style="color: #dd2200; background-color: #fff0f0">&quot;</span>
+        <span style="color: #008800; font-weight: bold">end</span>
+      <span style="color: #008800; font-weight: bold">end</span>
+    <span style="color: #008800; font-weight: bold">end</span>
+    <span style="color: #003388">puts</span> str.flatten
+  <span style="color: #008800; font-weight: bold">end</span>
+
+  <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066bb; font-weight: bold">print</span>
+    <span style="color: #003388">puts</span>
+    <span style="color: #003388">puts</span> <span style="color: #dd2200; background-color: #fff0f0">&quot;              RECEIPT&quot;</span>
+    <span style="color: #003388">puts</span> <span style="color: #dd2200; background-color: #fff0f0">&quot;         (from some store)&quot;</span>
+    <span style="color: #003388">puts</span>
+    <span style="color: #003388">puts</span>
+    <span style="color: #003388">puts</span> <span style="color: #dd2200; background-color: #fff0f0">&quot;    QTY    ITEM             PRICE&quot;</span>
+    <span style="color: #003388">puts</span>
+    <span style="color: #003388">puts</span>  <span style="color: #dd2200; background-color: #fff0f0">&quot;       </span><span style="color: #3333bb; background-color: #fff0f0">#{</span><span style="color: #003388">self</span>.item_lines<span style="color: #3333bb; background-color: #fff0f0">}</span><span style="color: #dd2200; background-color: #fff0f0">&quot;</span>
+    <span style="color: #003388">puts</span>
+    <span style="color: #003388">puts</span> <span style="color: #dd2200; background-color: #fff0f0">&quot;               Subtotal   </span><span style="color: #3333bb; background-color: #fff0f0">#{</span><span style="color: #003388">self</span>.subtotal<span style="color: #3333bb; background-color: #fff0f0">}</span><span style="color: #dd2200; background-color: #fff0f0">&quot;</span>
+    <span style="color: #003388">puts</span> <span style="color: #dd2200; background-color: #fff0f0">&quot;               Tax        </span><span style="color: #3333bb; background-color: #fff0f0">#{</span><span style="color: #003388">self</span>.tax<span style="color: #3333bb; background-color: #fff0f0">}</span><span style="color: #dd2200; background-color: #fff0f0">&quot;</span>
+    <span style="color: #003388">puts</span> <span style="color: #dd2200; background-color: #fff0f0">&quot;               Total      </span><span style="color: #3333bb; background-color: #fff0f0">#{</span><span style="color: #003388">self</span>.total<span style="color: #3333bb; background-color: #fff0f0">}</span><span style="color: #dd2200; background-color: #fff0f0">&quot;</span>
+    <span style="color: #003388">puts</span>
+  <span style="color: #008800; font-weight: bold">end</span>
+<span style="color: #008800; font-weight: bold">end</span>
+
+example = <span style="color: #003366; font-weight: bold">Receipt</span>.new(<span style="color: #003366; font-weight: bold">Hash</span>[<span style="color: #dd2200; background-color: #fff0f0">&quot;Bread&quot;</span>, <span style="color: #dd2200; background-color: #fff0f0">&quot;2&quot;</span>, <span style="color: #dd2200; background-color: #fff0f0">&quot;Apple&quot;</span>, <span style="color: #dd2200; background-color: #fff0f0">&quot;1&quot;</span>, <span style="color: #dd2200; background-color: #fff0f0">&quot;Pants&quot;</span>, <span style="color: #dd2200; background-color: #fff0f0">&quot;9&quot;</span>], <span style="color: #dd2200; background-color: #fff0f0">&quot;ID&quot;</span>)
+example.print
+</pre></div>
+
+      </p>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+</body>
+</html>
