@@ -64,6 +64,29 @@ font-family: 'Oswald';
 
 }
 
+main h5 {
+  font-family: 'Oswald';
+  font-size: 13px;
+  position: relative;
+  font-weight: normal;
+  top: 90px;
+  left: 352px;
+  color: black;
+}
+
+main h6 {
+
+  font-family: 'Oswald';
+  font-size: 21px;
+  position: relative;
+  font-style: italic;
+  font-weight: normal;
+  top: 60px;
+  left: 450px;
+  color: black;
+
+}
+
 main ol {
   position: relative;
   left: 390px;
@@ -219,4 +242,15 @@ td {
 }
 .td-element {
   border-bottom: 1px inset black;
+}
+#move-right {
+  position: relative;
+  left: 45px;
+}
+#meme {
+
+  display: inline-block;
+  position: absolute;
+  left: 720px;
+  top: 430px;
 }

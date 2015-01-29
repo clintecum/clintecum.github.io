@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>clintecum.github.io</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/blog-template.css">
+
+   <link href='http://fonts.googleapis.com/css?family=Average|Oswald' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=IM+Fell+French+Canon:400,400italic' rel='stylesheet' type='text/css'>
+  </head>
+
+
+
+  <body>
+
+  <div id="links-left">
+        <p>Week One</p>
+        <a href="../blog/c1-chefs-kitchen.html">Fireside Chat</a><br>
+        <a href="../blog/t1-git-blog.html">Version Control with git and Github</a>
+        <p>Week Two</p>
+        <a href="../blog/t2-css-design.html">CSS Design: The Box Model</a>
+        <p>Week Three</p>
+        <a href="../blog/t3-arrays-hashes.html">Ruby Hashes and Arrays</a><br>
+         <a href="../blog/c3_thinking_style.html">Abstract Random Thinking</a>
+          <p>Week Four</p>
+        <a href="../blog/t4-enumerable-methods.html">Ruby Methods: Enumerable#cycle</a><br>
+        <a href="../blog/c4-tech-issues.html">Age Discrimination in IT</a>
+        <p>Week Five</p>
+        <a href="../blog/t5-ruby-classes.html">Modeling Real-World Objects</a><br>
+        <a href="../blog/c5-feedback.html">Learning from Pair Programming</a>
+        <p>Week Six</p>
+        <a href="../blog/t6-oop-concepts.html">Blocks, Procs and Lambdas</a><br>
+        <a href="../blog/c6-stereotype-threat.html">Stereotype Threats</a>
+
+
+
+  </div><!--close links-->
+
+
+<main>
+  <h3>January 29, 2015</h3>
+  <h1>Objected-Oriented Programming<br> in Ruby</h1>
+    <h6>Blocks, Procs, and Lambdas...Oh my!</h6>
+
+      <h2>Blocks</h2>
+
+
+      <h5>WHAT ARE CODE BLOCKS?</h5>
+      <p class="less-indent">
+        Code blocks are sections of code that can be stored in variables and run as objects, although they are not objects.  Code blocks are not method arguments; they are simply a part of the syntax of certain method calls that can have code blocks passed to them.  The purpose of a code block is to be executed.  The execution of a code block yields control to a new scope level during the execution of a program.</p>
+
+      <p class="less-indent">
+        The following example demonstrates how to create a code block implicitly when invoking a method.  Note that code blocks can be denoted with curly brackets { } or the do and end keywords.  The use of curly brackets for denoting code blocks should not be confused with the use of curly brackets to create hashes; the context will always make clear whether curly brackets are denoting one or the other.
+      </p>
+      <p><!-- HTML generated using hilite.me --><div class="codeblock3" style="background: #f0f3f3; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">jlo <span style="color: #555555">=</span> <span style="color: #555555">[</span><span style="color: #CC3300">&quot;nothin&#39; phony&quot;</span>, <span style="color: #CC3300">&quot;everybody mad&quot;</span>, <span style="color: #CC3300">&quot;at the rocks that I wear&quot;</span><span style="color: #555555">]</span>
+
+      <span style="color: #0099FF; font-style: italic">#code blocks can be opened/closed with curly brackets</span>
+      jlo<span style="color: #555555">.</span>cycle(<span style="color: #FF6600">1</span>) {<span style="color: #555555">|</span>e<span style="color: #555555">|</span> <span style="color: #336666">puts</span> e<span style="color: #555555">.</span>upcase}
+
+      <span style="color: #0099FF; font-style: italic">#or with do/end keywords</span>
+      jlo<span style="color: #555555">.</span>map! <span style="color: #006699; font-weight: bold">do</span> <span style="color: #555555">|</span>e<span style="color: #555555">|</span> <span style="color: #336666">puts</span> e<span style="color: #555555">.</span>upcase <span style="color: #006699; font-weight: bold">end</span>
+      </pre></div>
+
+      <!-- HTML generated using hilite.me --><div class="codeblock3" style="background: #ffffff; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="font-style: italic">Output</span>:&gt;
+      NOTHIN PHONY
+      EVERYBODY MAD
+      AT THE ROCKS THAT I WEAR
+      </pre></div><br></p>
+
+      <h5>3 WAYS OF CREATING CODE BLOCKS</h5>
+        <p class="less-indent">
+          <ul>
+            <li>Implicitly when invoking a method</li>
+            <li>Explicitly with Proc.new</li>
+            <li>Explicitly with lambdas</li>
+          </ul>
+        </p>
+
+<p class="less-indent"><br>As the previous examples show, implicitly invoked code blocks are commonly used in conjunction with enumerator methods.  The other two more explicit ways of creating code blocks with Proc.new and lambdas will now be reviewed in the sections below.<br><br></p>
+
+
+
+
+      <h2>Proc objects</h2>
+
+      <p class="less-indent">Proc objects are "self-contained code sequences that you can create, store, pass around as method arguments, and, when you wish, execute with the <span class="courier">call</span> method."  "They have knowledge of a chunk of code (the code block they're created with) and the ability to execute that code when asked to."  Because proc objects can be assigned to variables, put inside arrays, and passed around as method arguments, you can think of them as explicit code blocks which can be generally treated like any other object.
+      </p>
+      <p class="less-indent"></p>
+
+
+
+
+      <h5>HOW TO USE PROC OBJECTS</h5>
+
+
+
+
+      <p class="less-indent">The next example demonstrates how to create a Proc object by instantiating the Proc class with a code block.  It works very simply: the code block becomes the body of the proc object that gets executed when you call the proc object:</p>
+      <p>
+
+<!-- HTML generated using hilite.me --><div class="codeblock3" style="background: #f0f3f3; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0099FF; font-style: italic">#The code block becomes the body of the proc --</span>
+<span style="color: #0099FF; font-style: italic">#when you call the proc, the block you provided</span>
+<span style="color: #0099FF; font-style: italic">#is executed:</span>
+
+jenny_from_the_block <span style="color: #555555">=</span> <span style="color: #336600">Proc</span><span style="color: #555555">.</span>new {
+  <span style="color: #336666">puts</span> <span style="color: #CC3300">&quot;Used to have a little&quot;</span>
+  <span style="color: #336666">puts</span> <span style="color: #CC3300">&quot;Now I have a lot&quot;</span>
+  }
+
+jenny_from_the_block<span style="color: #555555">.</span>call <span style="color: #0099FF; font-style: italic"># -&gt; Returns what&#39;s inside a proc&#39;s block</span>
+</pre></div>
+
+<!-- HTML generated using hilite.me --><div class="codeblock3" style="background: #ffffff; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="font-style: italic">Output</span>:&gt;
+Used to have a little
+Now I have a lot
+</pre></div>
+
+
+
+
+</p>
+<p class="less-indent"><br>
+Now notice what happens when we use Proc.new with a code block and return statement inside a method definition:
+
+<!-- HTML generated using hilite.me --><div class="codeblock3" style="background: #f0f3f3; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #006699; font-weight: bold">def</span> <span style="color: #CC00FF">no_matter_where_i_go</span>
+  <span style="color: #336600">Proc</span><span style="color: #555555">.</span>new { <span style="color: #006699; font-weight: bold">return</span> <span style="color: #CC3300">&quot;I know where I came from&quot;</span> }<span style="color: #555555">.</span>call
+  <span style="color: #006699; font-weight: bold">return</span> <span style="color: #CC3300">&quot;the Bronx&quot;</span>
+<span style="color: #006699; font-weight: bold">end</span>
+<span style="color: #336666">puts</span> no_matter_where_i_go
+</pre></div>
+
+
+
+</p>
+<p class="less-indent"><br>Which return statement do you expect to be executed?
+
+<!-- HTML generated using hilite.me --><div class="codeblock3" style="background: #ffffff; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="font-style: italic">Output</span>:&gt;
+I know where I came from
+</pre></div>
+
+
+
+<p class="less-indent">Why doesn't this code return "the Bronx"?  Because a block created with Proc.new behaves like it’s part of the calling method when return is used within it.  This is why it returns from both the block itself as well as the calling method. </p>
+<p class="less-indent">
+</p>
+
+
+
+
+
+
+
+
+</p>
+
+
+
+
+
+
+<h2>Lambdas</h2>
+
+       <p class="less-indent">
+        The lambda keyword is another commonly used way of creating code blocks in Ruby.  Unlike the previous example with a call to a Proc.new object inside a method definition that includes a return statement, a block created with lambda behaves like a method when you use return, and simply exits the block while handing control back to the calling method.
+
+      </p>
+
+      <p class="less-indent">The next example in the <span class="courier">dont_be_fooled</span> method shows this difference quite clearly.  The code block that was created with the lambda keyword gets returned by the call to the lambda object in the <span class="courier">by_the_rocks.call</span> line.  The second line of output is returned because of the "stabby lambda" syntax (<span class="courier">-></span>) preceding the code block that gets executed when the call method is made on the lambda object <span class="courier">jenny</span>.</p>
+
+<p><!-- HTML generated using hilite.me --><div class="codeblock3" style="background: #f0f3f3; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #006699; font-weight: bold">def</span> <span style="color: #CC00FF">dont_be_fooled</span>
+  by_the_rocks <span style="color: #555555">=</span> <span style="color: #336666">lambda</span> { <span style="color: #336666">puts</span> <span style="color: #CC3300">&quot;that i got&quot;</span> }
+  by_the_rocks<span style="color: #555555">.</span>call
+<span style="color: #006699; font-weight: bold">end</span>
+dont_be_fooled <span style="color: #0099FF; font-style: italic"></span>
+
+jenny <span style="color: #555555">=</span> <span style="color: #555555">-&gt;</span> { <span style="color: #336666">puts</span> <span style="color: #CC3300">&quot;from the block&quot;</span> }
+jenny<span style="color: #555555">.</span>call <span style="color: #0099FF; font-style: italic"></span>
+</pre></div>
+
+<!-- HTML generated using hilite.me --><div class="codeblock3" style="background: #ffffff; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="font-style: italic">Output</span>:&gt;
+that i got
+from the block
+</pre></div>
+
+
+</p>
+
+<p class="less-indent"><br>The next and final examples are just an extension of the same logic in the previous ones.  The only difference here is that the code block specifies local variables for use within the execution of the code block inside open bar notation | |.  To understand what's happening, try running these lines in irb.  What happens if you try to call these lambda objects without passing in the right number of arguments to the call method?
+
+
+<p><!-- HTML generated using hilite.me --><div class="codeblock3" style="background: #f0f3f3; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">calculate_equation <span style="color: #555555">=</span> <span style="color: #336666">lambda</span> {<span style="color: #555555">|</span>w,x,y,z<span style="color: #555555">|</span> w <span style="color: #555555">+</span> x <span style="color: #555555">+</span> y <span style="color: #555555">-</span> z}
+area_of_circle <span style="color: #555555">=</span> <span style="color: #336666">lambda</span> {<span style="color: #555555">|</span>radius<span style="color: #555555">|</span> <span style="color: #FFCC33">Math</span>:<span style="color: #FFCC33">:PI</span> <span style="color: #555555">*</span> radius<span style="color: #555555">**</span><span style="color: #FF6600">2</span>}
+
+<span style="color: #336666">puts</span> calculate_equation<span style="color: #555555">.</span>call(<span style="color: #FF6600">2</span>,<span style="color: #FF6600">3</span>,<span style="color: #FF6600">4</span>,<span style="color: #FF6600">5</span>)
+<span style="color: #336666">puts</span> area_of_circle<span style="color: #555555">.</span>call(<span style="color: #FF6600">9</span><span style="color: #555555">.</span><span style="color: #FF6600">75</span>)
+</pre></div>
+</p>
+<p><!-- HTML generated using hilite.me --><div class="codeblock3" style="background: #ffffff; overflow:auto;width:600px;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="font-style: italic">Output</span>:&gt;
+4
+298.6476516318797
+</pre></div>
+</p>
+
+</main>
+
+
+
+
+
+
+
+</body>
+</html>
