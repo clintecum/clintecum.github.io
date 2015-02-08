@@ -70,8 +70,8 @@ text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-#content {
-width: 290px;
+/*#content {
+  width: 290px;
 height: 290px;
 background: linear-gradient(black,black,black,black,black,white,white,white,white,black,black);
 
@@ -86,7 +86,8 @@ border-top-right-radius: 290px 290px;
 border-bottom-right-radius: 290px 290px;
 border-bottom-left-radius: 290px 290px;
 box-shadow: 8px 8px 8px 8px black;
-}
+
+}*/
 #contact{
 
 }
@@ -161,4 +162,23 @@ text-align: center;
  z-index: 99999;
   left: -100px;
   border-top: 4px solid red;
+}
+
+.script {
+width: 290px;
+height: 290px;
+background: linear-gradient(black,black,black,black,black,white,white,white,white,black,black);
+
+top: 120px;
+position: relative;
+left:50px;
+margin-right: auto;
+margin-left: auto;
+
+border-top-left-radius: 290px 290px;
+border-top-right-radius: 290px 290px;
+border-bottom-right-radius: 290px 290px;
+border-bottom-left-radius: 290px 290px;
+box-shadow: 8px 8px 8px 8px black;
+
 }

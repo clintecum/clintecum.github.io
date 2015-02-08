@@ -1,0 +1,330 @@
+body {
+  width: 100%;
+  background-color:#EAECE0;
+}
+
+main {
+width: 100%;
+height: 4000px;
+ background-color: #EAECE0;
+
+top: 25px;
+position: absolute;
+float: right;
+left: -1px;
+
+padding-top: -20px;
+}
+
+main h1{
+  font-family: 'Playfair Display SC';
+  font-size: 40px;
+  color: black;
+  font-weight: bolder;
+  position: relative;
+  top: -25px;
+  left: 190px;
+   width: 600px;
+   text-align: center;
+}
+
+main h6 {
+
+  font-family: 'Gentium Book Basic';
+  font-size: 21px;
+  position: relative;
+  font-style: italic;
+  font-weight: normal;
+  top: -65px;
+  left: 395px;
+  color: black;
+}
+.indent{
+  text-indent: 15px;
+}
+main h2{
+
+ font-family: 'Old Standard TT';
+  font-size: 18px;
+  position: relative;
+  font-weight: bolder;
+  top: -20px;
+  left: 275px;
+  color: black;
+  margin-bottom: 20px;
+  width: 560px;
+}
+
+main h5 {
+  font-family: 'Old Standard TT';
+  font-size: 12px;
+  position: relative;
+  font-weight: normal;
+  top: -18px;
+  left: 277px;
+  color: black;
+}
+
+main h3{
+  font-family: 'Average', serif;
+  font-size: 12px;
+  position: relative;
+  top: 219px;
+  left: 277px;
+  color: black;
+  font-weight: normal;
+  top-margin:2px;
+}
+
+.bold {
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: -10px;
+  left: -9px;
+}
+
+
+main h4 {
+font-family: 'Gentium Book Basic';
+  font-size: 17px;
+  position: relative;
+  font-weight: normal;
+
+  top: -13px;
+  left: 275px;
+  color: black;
+
+}
+/*<link href='http://fonts.googleapis.com/css?family=BenchNine|EB+Garamond|Old+Standard+TT|Gentium+Book+Basic' rel='stylesheet' type='text/css'>*/
+
+
+
+
+main ol {
+  position: relative;
+  left: 390px;
+  top: 90px;
+  line-height: 30px;
+  font-family: Average;
+}
+
+
+
+main p{
+  color: black;
+  font-family: 'Old Standard TT';
+  text-align: justify;
+  font-size: 14px;
+  position: relative;
+  top: -17px;
+  left: 280px;
+  width: 540px;
+  margin-top: 15px;
+text-indent: 35px;
+line-height: 30px;
+
+}
+.less-indent{
+  text-indent:1px;
+}
+.quote {
+  position: relative;
+  top: 90px;
+  left: 365px;
+  width: 500px;
+  text-indent: -5px;
+  font-style: italic;
+}
+.subpoints{
+  font-size: 16px;
+}
+.ref{
+  font-family: Average;
+  font-size: 10px;
+  color: blue;
+  position: relative;
+  top: -10px;
+  left: 4px;
+}
+
+.codeblock{
+position: relative;
+  top: 95px;
+left: 295px;
+  margin-bottom: 30px;
+}
+.codeblock2{
+position: relative;
+  top: 15px;
+left:-50px;
+  margin-bottom: 30px;
+}
+.codeblock3{
+position: relative;
+  top: 105px;
+left: 345px;
+  margin-bottom: 30px;
+}
+.title-ital {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.courier {
+  font-family: Courier;
+  font-size: 15px;
+}
+.sublinks {
+  font-size: 10px;
+  position: relative;
+  left: -40px;
+  top: 5px;
+
+}
+
+main ul {
+  width: 540px;
+  left: 355px;
+  top: 90px;
+  font-family: Average;
+  position: relative;
+  line-height: 30px;
+}
+
+#move-right {
+  position: relative;
+  left: 45px;
+}
+#meme {
+
+  display: inline-block;
+  position: absolute;
+  left: 720px;
+  top: 430px;
+}
+
+#links-left {
+  position: fixed;
+  top: 30px;
+
+  z-index: 99999;
+}
+#links-left p {
+  /*color: #F359B9;good pink*/
+  color: #8D0F00;
+  position: relative;
+ font-family: 'La Belle Aurore';
+ font-size: 15px;
+  top: 15px;
+  left: -1px;
+z-index: 99998;
+margin-top: -20px;
+}
+#links-left a {
+  color: #313233;
+  font-family: 'Bentham';
+  font-size: 12px;
+  position: relative;
+  left: 1px;
+  top: -7px;
+  line-height: 12px;
+  z-index: 99999;
+}
+
+#links-left a:hover {
+  color:#0E5B8C;
+
+}
+
+
+table {
+  font-family: Average;
+  font-size: 13px;
+/*  width: 400px;*/
+  position: relative;
+/*  left: 230px;*/
+  top: 9px;
+  border: 2px outset black;
+
+}
+.th-element {
+  border-bottom: 1px solid black;
+}
+.th {
+  border-right: 1px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#th1 {
+  background-color: #8CB1C8
+}
+#th2 {
+  background-color: #8CB1C8
+}
+#th3 {
+  background-color: #8CB1C8
+}
+#th4 {
+  background-color: #8CB1C8
+}
+td {
+  /*padding-left: 7px;*/
+}
+.td-element {
+  border-bottom: 1px inset black;
+}
+
+#table ul {
+  position: relative;
+  left: -15px;
+  top: 1px;
+  width: 240px;
+}
+#table2 ul {
+  position: relative;
+  left: -15px;
+  top: 1px;
+  width: 240px;
+}
+#tha {
+width: 100px;
+}
+#thb {
+  font-weight: bold;
+  width: 200px;
+  font-family: "Old Standard TT";
+  text-decoration: underline;
+}
+
+#thc {
+
+  width: 200px;
+  font-weight: bold;
+  font-family: "Old Standard TT";
+  text-decoration: underline;
+}
+
+.td {
+  text-indent: 65px;
+}
+
+#table3
+{
+  position: relative;
+  left: 340px;
+}
+
+
+
+
+#table2 {
+position: relative;
+/*left: 340px;*/
+
+}
+
+.center {
+  position: relative;
+  left: 490px;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>clintecum.github.io</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/blog-template.css">
+
+   <link href='http://fonts.googleapis.com/css?family=Average|Oswald' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=IM+Fell+French+Canon:400,400italic' rel='stylesheet' type='text/css'>
+  </head>
+
+
+
+  <body>
+
+  <div id="links-left">
+       <p>OBJECT-ORIENTED PROGRAMMING</p>
+        <a href="../blog/oop-in-ruby.html">Design Principles</a><br><br>
+
+        <p>DBC BLOG</p>
+        <p>Week One</p>
+        <a href="../blog/c1-chefs-kitchen.html">Fireside Chat</a><br>
+        <a href="../blog/t1-git-blog.html">Version Control with git and Github</a>
+        <p>Week Two</p>
+        <a href="../blog/t2-css-design.html">CSS Design: The Box Model</a>
+        <p>Week Three</p>
+        <a href="../blog/t3-arrays-hashes.html">Ruby Hashes and Arrays</a><br>
+         <a href="../blog/c3_thinking_style.html">Abstract Random Thinking</a>
+          <p>Week Four</p>
+        <a href="../blog/t4-enumerable-methods.html">Ruby Methods: Enumerable#cycle</a><br>
+        <a href="../blog/c4-tech-issues.html">Age Discrimination in IT</a>
+        <p>Week Five</p>
+        <a href="../blog/t5-ruby-classes.html">Modeling Real-World Objects</a><br>
+        <a href="../blog/c5-feedback.html">Learning from Pair Programming</a>
+        <p>Week Six</p>
+        <a href="../blog/t6-oop-concepts.html">Blocks, Procs and Lambdas</a><br>
+        <a href="../blog/c6-stereotype-threat.html">Stereotype Threats</a>
+
+
+
+  </div><!--close links-->
+
+
+<main>
+  <h3>Notes from my DBC journey</h3>
+  <h1>Objected-Oriented Programming<br> in Ruby</h1>
+    <span id="move-right"><h6>Practical Design Principles</h6></span>
+
+
+<!--MANAGING DEPENDENCIES SECTION OPEN-->
+      <h2>Managing Dependencies</h2>
+          <h5>WHAT ARE DEPENDENCIES?</h5>
+              <p class="less-indent"></p>
+          <h5>LOOSELY COUPLED CODE</h5>
+              <p class="less-indent"></p>
+          <h5>HOW CAN DEPENDENCIES BE MANAGED?</h5>
+              <p class="less-indent">
+                Dependencies cannot always be entirely avoided in practice.  Improvements can be made, however, by reducing the overall number of dependencies and publicly exposing them (i.e. dependencies on external class names)
+
+                <ul>
+                  <li>Injecting dependencies</li>
+                  <li>Isolating dependencies</li>
+                  <li>Depending on abstractions</li>
+                </ul>
+</p><p class="less-indent">
+                Classes should depend on things that change less often than they do
+              </p>
+<!--MANAGING DEPENDENCIES SECTION CLOSE-->
+
+
+
+<!--FLEXIBLE INTERFACES SECTION OPEN-->
+     <h2>Creating Flexible Interfaces</h2>
+         <h5> WHAT ARE INTERFACES?</h5>
+            <p class="less-indent"> </p>
+         <h5>DEFINING INTERFACES?</h5>
+         <h5>PUBLIC INTERFACES</h5>
+         <h5>HOW TO CREATE EXPLICIT INTERFACES</h5>
+         <h5>THE LAW OF DEMETER</h5>
+<!--FLEXIBLE INTERFACES SECTION CLOSE-->
+
+
+<!--DUCK TYPING SECTION OPEN-->
+     <h2>Duck Typing</h2>
+         <h5> WHAT IS DUCK TYPING?</h5>
+            <p class="less-indent"> </p>
+         <h5>HOW TO USE DUCK TYPING</h5>
+<!--DUCK TYPING SECTION CLOSE-->
+
+<!--INHERITANCE SECTION OPEN-->
+     <h2>Inheritance</h2>
+         <h5> WHAT IS INHERITANCE?</h5>
+            <p class="less-indent"> </p>
+         <h5>WHEN TO USE INHERITANCE</h5>
+         <h5>FINDING ABSTRACTION</h5>
+<!--INHERITANCE SECTION CLOSE-->
+
+<!--MODULES SECTION OPEN-->
+     <h2>Role Behavior with Modules</h2>
+         <h5> INHERITABLE CODE</h5>
+            <p class="less-indent"> </p>
+<!--MODULES SECTION CLOSE-->
+
+<!--COMBINING OBJECTS WITH COMPOSITION SECTION OPEN-->
+     <h2>Composing Parts</h2>
+         <h5>COMPOSITION</h5>
+            <p class="less-indent"> </p>
+         <h5>INHERITANCE OR COMPOSITION?</h5>
+<!--COMBINING OBJECTS WITH COMPOSITION SECTION CLOSE-->
+
+<!--DESIGNING TESTS SECTION OPEN-->
+     <h2>Designing Cost-Effective Tests</h2>
+         <h5>INTENTIONAL TESTING</h5>
+            <p class="less-indent">
+"The most stable thing about any object is its public interface; it logically follows that the tests you write shoudl be for messages that are defined in public interfaces," (195).<br><br>
+Testing state: "Tests that make assertions about the values that emssages return are tests of state.  Such tests commonly assert that the results returned by a message equal an expected value."
+
+
+
+            </p>
+         <h5>TESTING INCOMING MESSAGES</h5>
+         <h5>TESTING PRIVATE MESSAGES</h5>
+         <h5>TESTING OUTGOING MESSAGES</h5>
+         <h5>TESTING DUCK TYPES</h5>
+         <h5>TESTING INHERITED CODE</h5>
+<!--DESIGNING TESTS SECTION CLOSE-->
+
+
+</main>
+
+
+
+
+
+
+
+</body>
+</html>

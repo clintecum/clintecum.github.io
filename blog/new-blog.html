@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>clintecum.github.io</title>
+    <meta charset="UTF-8">
+
+
+
+      <link rel="stylesheet" type="text/css" href="../css/site-nav.css">
+      <link rel="stylesheet" type="text/css" href="../css/new-blog-main.css">
+      <link rel="stylesheet" type="text/css" href="../css/blog-links.css">
+
+
+<link href='http://fonts.googleapis.com/css?family=Teko|Puritan|Stalemate|La+Belle+Aurore|Smythe|Source+Code+Pro|Bigelow+Rules|Monofett|Bentham|Germania+One' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Londrina+Shadow|Oswald|Playfair+Display+SC|Old+Standard+TT' rel='stylesheet' type='text/css'>
+
+  </head>
+
+
+
+  <body>
+
+
+ <header>
+
+
+    <span id="title">Welcome</span>
+
+    <nav>
+         <!--link one-->
+            <a href="index.html"><div id="one" class="box"></div></a><a id="link1" href="index.html">Home</a>
+         <!--link two-->
+            <a href="blog/blog.html"><div id="two" class="box"></div></a><a id="link2" href="blog/blog.html">Blog</a>
+         <!--link three-->
+            <a href="portfolio.html"><div id="three" class="box"></div></a><a id="link3" href="portfolio.html">Portfolio</a>
+         <!--link four -->
+            <a href="about-me.html"><div id="four" class="box"></div></a><a id="link4" href="about-me.html">About</a>
+         <!--link five-->
+            <a href="contact.html"><div id="five" class="box"></div></a><a id="link5" href="contact.html">Contact</a>
+    </nav>
+
+<div class="content"></div>
+
+
+ <span id="title2"><h1>clintecum.github.io</h1></span>
+
+
+
+<p id="search-p">Quick Find<br></p>
+
+  <div id="search-bar">
+    <script>
+          (function() {
+            var cx = '006754781759251518075:rij_mirnb5w';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+    </script>
+    <gcse:searchbox-only></gcse:searchbox-only>
+  </div>
+
+
+
+
+
+ <span id="title-two"><h2>Blog</h2></span>
+
+
+<!--    <div id="results">
+      <script>
+            (function() {
+              var cx = '006754781759251518075:rij_mirnb5w';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                  '//www.google.com/cse/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+    </script>
+    <gcse:searchresults-only></gcse:searchresults-only>
+</div> -->
+
+ </header>
+
+
+
+
+
+  <main>
+
+
+
+      <section>
+          <iframe src="../blog/t7-test.html" width="100%" height="100%"></iframe>
+      </section><!--close main-->
+
+<script>
+        var sun = new Image();
+        var moon = new Image();
+        var earth = new Image();
+        function init(){
+          sun.src = 'Canvas_sun.png';
+          moon.src = 'Canvas_moon.png';
+          earth.src = 'Canvas_earth.png';
+          window.requestAnimationFrame(draw);
+        }
+        function draw() {
+          var ctx = document.getElementById('canvas').getContext('2d');
+          ctx.globalCompositeOperation = 'destination-over';
+          ctx.clearRect(0,0,300,300); // clear canvas
+          ctx.fillStyle = 'rgba(0,0,0,0.4)';
+          ctx.strokeStyle = 'rgba(0,153,255,0.4)';
+          ctx.save();
+          ctx.translate(150,150);
+          // Earth
+          var time = new Date();
+          ctx.rotate( ((2*Math.PI)/60)*time.getSeconds() + ((2*Math.PI)/60000)*time.getMilliseconds() );
+          ctx.translate(105,0);
+          ctx.fillRect(0,-12,50,24); // Shadow
+          ctx.drawImage(earth,-12,-12);
+          // Moon
+          ctx.save();
+          ctx.rotate( ((2*Math.PI)/6)*time.getSeconds() + ((2*Math.PI)/6000)*time.getMilliseconds() );
+          ctx.translate(0,28.5);
+          ctx.drawImage(moon,-3.5,-3.5);
+          ctx.restore();
+          ctx.restore();
+          ctx.beginPath();
+          ctx.arc(150,150,105,0,Math.PI*2,false); // Earth orbit
+          ctx.stroke();
+          ctx.drawImage(sun,0,0,300,300);
+          window.requestAnimationFrame(draw);
+        }
+        init();
+      </script>
+
+<!--
+      <section id="sidebar"><iframe src="" width="5%" height="100%"></iframe></section> -->
+
+  </main><!--close content-->
+
+
+
+
+  </body>
+</html>

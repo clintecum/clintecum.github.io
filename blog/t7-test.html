@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>clintecum.github.io</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/new-blog-template.css">
+
+
+   <link href='http://fonts.googleapis.com/css?family=Average|Oswald' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=IM+Fell+French+Canon:400,400italic' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Teko|Puritan|Share+Tech|Pompiere|Stalemate|La+Belle+Aurore|Allura|Atomic+Age|Smythe|Source+Code+Pro|Bigelow+Rules|Monofett|Romanesco|Anonymous+Pro|Bentham|Germania+One|Geo|Inconsolata|Iceland|Play|Share+Tech+Mono|Six+Caps' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=BenchNine|EB+Garamond|Old+Standard+TT|Gentium+Book+Basic' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Kristi|Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Tangerine:400,700|Londrina+Shadow|Oswald|Playfair+Display+SC|Old+Standard+TT' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=BenchNine:400,700|EB+Garamond|Old+Standard+TT:400,700,400italic|Gentium+Book+Basic:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+#table-td1 {
+  width: 400px;
+}
+#table {
+  width: 550px;
+  position: relative;
+  top: -14px;
+  left: 275px;
+}
+#table2 {
+  position: relative;
+  left: 275px;
+  width: 550px;
+  top: -14px;
+}
+#table2-td1 {
+  width: 400px;
+}
+</style>
+  </head>
+
+
+
+  <body>
+<div id="links-left">
+        <p>Week One</p>
+        <a href="../blog/c1-chefs-kitchen.html">Fireside Chat</a><br>
+        <a href="../blog/t1-git-blog.html">Version Control with git and Github</a>
+        <p>Week Two</p>
+        <a href="../blog/t2-css-design.html">CSS Design: The Box Model</a>
+        <p>Week Three</p>
+        <a href="../blog/t3-arrays-hashes.html">Ruby Hashes and Arrays</a><br>
+         <a href="../blog/c3_thinking_style.html">Abstract Random Thinking</a>
+          <p>Week Four</p>
+        <a href="../blog/t4-enumerable-methods.html">Ruby Methods: Enumerable#cycle</a><br>
+        <a href="../blog/c4-tech-issues.html">Age Discrimination in IT</a>
+        <p>Week Five</p>
+        <a href="../blog/t5-ruby-classes.html">Modeling Real-World Objects</a><br>
+        <a href="../blog/c5-feedback.html">Learning from Pair Programming</a>
+        <p>Week Six</p>
+        <a href="../blog/t6-oop-concepts.html">Blocks, Procs and Lambdas</a><br>
+        <a href="../blog/c6-stereotype-threat.html">Stereotype Threats</a>
+        <p>Week Seven</p>
+        <a href="../blog/t7-JavaScript.html">Programming in JavaScript</a><br>
+        <a href="../blog/c7-values.html">Stereotype Threats</a>
+  </div><!--close links-->
+
+
+
+<main>
+  <!-- <h3><span class="bold">By Chris Lintecum</span></h3> -->
+    <h3><em>February 4, 2015</em></h3>
+  <h1>Programming in <br>JavaScript</h1>
+    <h6>Comparisons to Ruby</h6>
+
+      <h2>Object-Oriented Programming Basics</h2>
+      <p class="less-indent">The notion of object-oriented programming is based upon the idea of computer programs arising from the transmission of messages sent between well-designed objects containing both behavior (methods) and state (data structures).  Things like calculations, data manipulation and input/output operations are all handled by objects that have been specifically designed to perform this or that task or to provide a certain piece of information to another object.  In most object-oriented languages, such as C++, Java, Ruby and Python, objects are class-based, meaning that individual objects are instances of particular classes, which are in turn themselves objects.  Although built-in method behaviors can be overwritten, the behavior of objects which are instances of classes is always determined to some degree by the method definitions provided in the parent class, which are typically available in a language's official documentation.</p>
+
+
+
+      <!-- <h5>WHAT ROLE DO OBJECTS PLAY IN JAVASCRIPT?</h5> -->
+      <h4>WHAT ROLE DO OBJECTS PLAY IN JAVASCRIPT?</h4>
+      <p class="less-indent">Like objects in other langagues, JavaScript objects are useful for collecting and managing data, and thus for modeling objects found in the real world.  A JavaScript object is in fact a container of properties consisting of keyed collections of names and values, which makes them reminiscent of key-value pairs in Ruby hashes.  JavaScript objects can be easily created with simple literal notation using open curly brackets.  They can store and return data, and they can be nested inside other objects. </p>
+      <p>
+        <table id="table">
+          <tbody>
+            <tr>
+              <th class="th">JavaScript Objects</th>
+                <td id ="table-td1">
+                  <ul>
+                    <li>Class-free</li>
+                    <li>Keyed collections of names and values</li>
+                    <li>Property inheritance by prototype linkage</li>
+                  </ul>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </p>
+
+<!-- <h4><br>Quick Review of Ruby Objects</h4> -->
+<p class="center">vs.</p>
+
+      <p><table id="table2">
+          <tbody>
+            <tr>
+              <th class="th">Ruby Objects</th>
+                <td id="table2-td1">
+                  <ul>
+                    <li>Class-based, object-oriented design</li>
+                    <li>"Everything (in Ruby) is an object."</li>
+                    <li>Combine data and behavior into one thing</li>
+
+                  </ul>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </p>
+
+
+      <p><table id="table3">
+          <tbody>
+            <tr>
+
+
+                  <th id="thb">Ruby</th>
+
+                  <th id="thc">JavaScript</th>
+            </tr>
+            <tr>
+
+              <td class="td">Forget me</td>
+              <td class="td">I hate myself</td>
+            </tr>
+          </tbody>
+        </table>
+      </p>
+
+      <p class="less-indent">Although JavaScript objects are not constructed from the blueprints of class objects like in Ruby, they do have what is called a prototype, which is checked whenever an object gets a request for properties that it does not have.
+
+
+      </p>
+
+
+</main>
+
+
+
+
+
+
+
+</body>
+</html>

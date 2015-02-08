@@ -1,0 +1,77 @@
+body {
+  width: 1080px;
+  height: 1000px;
+  position: absolute;
+  background-color: black;
+  overflow-y: hidden;
+  color: red;
+}
+
+#header h3 {
+  position: absolute;
+  top: -10px;
+  color: red;
+  left:425px;
+  font-family: Almendra;
+}
+
+
+#title {
+  color: red;
+  font-size: 42px;
+  position: relative;
+  top: -305px;
+  font-family: 'Jacques Francois Shadow';
+}
+
+#title h1{
+position: relative;
+top: -5px;
+text-align: center;
+}
+
+#span {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.skylar {
+  color: white;
+}
+
+
+main {
+  width: 129%;
+  height: 650px;
+  position: fixed;
+  background-image: url('../img/bkg-contact.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: 55px;
+  left: -260px;
+  top: 93px;
+  z-index:99999;
+
+}
+
+
+.script {
+width: 200px;
+height: 200px;
+background: linear-gradient(#E82C0C,#F52E0C,#CF270A,#CF270A,#F52E0C,#CF270A,#A82008,#F52E0C,#F52E0C,#CF270A);
+
+top: 120px;
+position: relative;
+left:50px;
+margin-right: auto;
+margin-left: auto;
+
+border-top-left-radius: 200px 200px;
+border-top-right-radius: 200px 200px;
+border-bottom-right-radius: 200px 200px;
+border-bottom-left-radius: 200px 200px;
+box-shadow: 8px 8px 8px 8px black;
+
+}

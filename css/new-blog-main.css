@@ -1,0 +1,93 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+background-color: black;
+
+  overflow-y: hidden;
+
+  overflow-x: hidden;
+}
+section {
+width: 75%;
+background-color: white;
+height: 100%;
+top: -47px;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+
+#sidebar{
+position: absolute;
+left: 1250px;
+background-color: blue;
+}
+
+
+#main-box {
+  width: 610px;
+  height: 30px;
+  background-color: black;
+  position: relative;
+  left: -70px;
+  top: 20px;
+  margin-left: 40px;
+}
+
+#main-box h1 {
+  color: white;
+  position: relative;
+  left: 129px;
+  top: -2px;
+  font-family: 'IM Fell French Canon SC', sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  color: red;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background: linear-gradient(black,#400000,#FF1919, #BF0000, #400000,black);
+  top: 140px;
+}
+
+
+
+footer {
+  position: fixed;
+  top: 750px;
+  width: 300%;
+  height: 120px;
+  background-color: black;
+ z-index: 99999;
+  left: -100px;
+  border-top: 5px double red;
+}
+
+#container {
+position: relative;
+width: 100%;
+height: 700px;
+margin-left: auto;
+margin-right: auto;
+clear: both;
+
+
+}
+
+
+#content #container #blognav a:hover {
+  color: yellow;
+  }
+
+
+
+
+
+
