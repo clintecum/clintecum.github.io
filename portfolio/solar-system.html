@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Solar System - clintecum.github.io</title>
+    <meta charset="UTF-8">
+
+
+
+     <!--  <link rel="stylesheet" type="text/css" href="../css/site-nav.css"> -->
+      <link rel="stylesheet" type="text/css" href="../css/new-blog-main.css">
+      <link rel="stylesheet" type="text/css" href="../css/game.css">
+
+
+<link href='http://fonts.googleapis.com/css?family=Teko|Puritan|Share+Tech|Pompiere|Stalemate|La+Belle+Aurore|Allura|Atomic+Age|Smythe|Source+Code+Pro|Bigelow+Rules|Monofett|Romanesco|Anonymous+Pro|Bentham|Germania+One|Geo|Inconsolata|Iceland|Play|Share+Tech+Mono|Six+Caps' rel='stylesheet' type='text/css'>
+
+
+<link href='http://fonts.googleapis.com/css?family=Kristi|Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Tangerine:400,700|Londrina+Shadow|Oswald|Playfair+Display+SC|Old+Standard+TT' rel='stylesheet' type='text/css'>
+
+  </head>
+
+
+
+  <body>
+
+<canvas id="canvas"style="border:#000033;padding:2.5em 1em;"></canvas>
+ <header>
+
+<span id="title">Welcome</span>
+
+    <nav>
+         <!--link one-->
+            <a href="index.html"><div id="one" class="box"></div></a><a id="link1" href="index.html">Home</a>
+         <!--link two-->
+            <a href="blog/blog.html"><div id="two" class="box"></div></a><a id="link2" href="blog/blog.html">Blog</a>
+         <!--link three-->
+            <a href="portfolio.html"><div id="three" class="box"></div></a><a id="link3" href="portfolio.html">Portfolio</a>
+         <!--link four -->
+            <a href="about-me.html"><div id="four" class="box"></div></a><a id="link4" href="about-me.html">About</a>
+         <!--link five-->
+            <a href="contact.html"><div id="five" class="box"></div></a><a id="link5" href="contact.html">Contact</a>
+    </nav>
+
+<div class="contento"></div>
+
+
+ <span id="title2"><h1>clintecum.github.io</h1></span>
+
+<!-- <div class="date">
+    <p class="pclass">Today is </p><script>document.write(Date());</script>
+</div> -->
+
+<p id="search-p">Quick Find<br></p>
+<div id="search-bar">
+
+         <div id='cse-search-form' style='width: 90%;'></div>
+
+
+<script src='//www.google.com/jsapi' type='text/javascript'></script>
+<script type='text/javascript'>
+google.load('search', '1', {language: 'en', style: google.loader.themes.MINIMALIST});
+google.setOnLoadCallback(function() {
+  var customSearchOptions = {};
+  var imageSearchOptions = {};
+  imageSearchOptions['layout'] = 'google.search.ImageSearch.LAYOUT_POPUP';
+  customSearchOptions['enableImageSearch'] = true;
+  var customSearchControl =   new google.search.CustomSearchControl('006754781759251518075:rij_mirnb5w', customSearchOptions);
+  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.enableSearchboxOnly('https://', 'q');
+  customSearchControl.draw('cse-search-form', options);</script>
+
+<div id='cse' style='width: 100%;'>Search</div>
+<script src='//www.google.com/jsapi' type='text/javascript'></script>
+<script type='text/javascript'>
+google.load('search', '1', {language: 'en', style: google.loader.themes.DEFAULT});
+google.setOnLoadCallback(function() {
+  var customSearchOptions = {};
+  var imageSearchOptions = {};
+  imageSearchOptions['layout'] = 'google.search.ImageSearch.LAYOUT_POPUP';
+  customSearchOptions['enableImageSearch'] = true;
+  var customSearchControl =   new google.search.CustomSearchControl('006754781759251518075:rij_mirnb5w', customSearchOptions);
+  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.enableSearchResultsOnly();
+  customSearchControl.draw('cse', options);</script>
+
+</div>
+
+
+
+
+
+ <span id="title-two"><h2>Solar System</h2></span>
+
+
+
+
+ </header>
+
+
+
+
+
+  <main>
+
+
+      <section>
+
+
+ <iframe src="solar-system-test.html" width="100%" height="100%"></iframe>
+
+
+
+      </section><!--close main-->
+
+
+
+ <script>
+        var sun = new Image();
+        var moon = new Image();
+        var earth = new Image();
+        function init(){
+          sun.src = 'Canvas_sun.png';
+          moon.src = 'Canvas_moon.png';
+          earth.src = 'Canvas_earth.png';
+          window.requestAnimationFrame(draw);
+        }
+        function draw() {
+          var ctx = document.getElementById('canvas').getContext('2d');
+          ctx.globalCompositeOperation = 'destination-over';
+          ctx.clearRect(0,0,300,300); // clear canvas
+          ctx.fillStyle = 'rgba(0,0,0,0.4)';
+          // ctx.strokeStyle = 'rgba(0,153,255,0.4)';
+          ctx.strokeStyle = 'rgba(0,0,0,0)';
+          ctx.save();
+          ctx.translate(150,150);
+          // Earth
+          var time = new Date();
+          ctx.rotate( ((2*Math.PI)/60)*time.getSeconds() + ((2*Math.PI)/60000)*time.getMilliseconds() );
+          ctx.translate(105,0);
+          //ctx.fillRect(0,-12,50,24); // Shadow
+          ctx.drawImage(earth,-12,-12);
+          // Moon
+          ctx.save();
+          ctx.rotate( ((2*Math.PI)/6)*time.getSeconds() + ((2*Math.PI)/6000)*time.getMilliseconds() );
+          ctx.translate(0,28.5);
+          ctx.drawImage(moon,-3.5,-3.5);
+          ctx.restore();
+          ctx.restore();
+          ctx.beginPath();
+          ctx.arc(150,150,105,0,Math.PI*2,false); // Earth orbit
+          ctx.stroke();
+          ctx.drawImage(sun,0,0,300,300);
+          window.requestAnimationFrame(draw);
+        }
+        init();
+      </script>
+
+
+  </main><!--close content-->
+
+
+
+
+  </body>
+</html>

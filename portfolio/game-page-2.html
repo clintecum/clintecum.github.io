@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>clintecum.github.io</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/game.css">
+
+
+<link href='http://fonts.googleapis.com/css?family=Tangerine:400,700|Londrina+Shadow|Oswald|Playfair+Display+SC|Old+Standard+TT' rel='stylesheet' type='text/css'>
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+
+
+
+  <body>
+    <main>
+    <!--   <canvas id="tutorial" width="150" height="150"></canvas> -->
+
+      <script>
+// Create the canvas
+var canvas = document.createElement("canvas");
+var ctx = canvas.getContext("2d");
+canvas.width = 582;
+canvas.height = 484;
+document.body.appendChild(canvas);
+
+// Background image
+var bgReady = false;
+var bgImage = new Image();
+bgImage.onload = function () {
+  bgReady = true;
+};
+bgImage.src = "bkg.png";
+
+// Hero image
+var heroReady = false;
+var heroImage = new Image();
+heroImage.onload = function () {
+  heroReady = true;
+};
+heroImage.src = "hero.png";
+
+// Door image
+var doorReady = false;
+var doorImage = new Image();
+doorImage.onload = function () {
+  doorReady = true;
+};
+doorImage.src = "door.png";
+
+// Thesis image
+var thesisReady = false;
+var thesisImage = new Image();
+thesisImage.onload = function () {
+  thesisReady = true;
+};
+thesisImage.src = "thesis.png";
+
+
+// Game objects
+var hero = {
+  speed: 256 // movement in pixels per second
+};
+var door = {};
+var doorsPosted = 0;
+var thesis = {};
+
+// Handle keyboard controls
+var keysDown = {};
+
+addEventListener("keydown", function (e) {
+  keysDown[e.keyCode] = true;
+}, false);
+
+addEventListener("keyup", function (e) {
+  delete keysDown[e.keyCode];
+}, false);
+
+// Reset the game when Martin Luther posts a thesis
+var reset = function () {
+  hero.x = canvas.width / 2;
+  hero.y = canvas.height / 2;
+
+  // Throw the door somewhere on the screen randomly
+  door.x = 32 + (Math.random() * (canvas.width - 64));
+  door.y = 32 + (Math.random() * (canvas.height - 64));
+  thesis.x = 32 + (Math.random() * (canvas.width - 64));
+  thesis.y = 32 + (Math.random() * (canvas.height - 64));
+};
+
+// Update game objects
+var update = function (modifier) {
+  if (38 in keysDown) { // Player holding up
+    hero.y -= hero.speed * modifier;
+  }
+  if (40 in keysDown) { // Player holding down
+    hero.y += hero.speed * modifier;
+  }
+  if (37 in keysDown) { // Player holding left
+    hero.x -= hero.speed * modifier;
+  }
+  if (39 in keysDown) { // Player holding right
+    hero.x += hero.speed * modifier;
+  }
+
+  // Are they touching?
+  if (
+    hero.x <= (door.x + 32)
+    && door.x <= (hero.x + 32)
+    && hero.y <= (door.y + 32)
+    && door.y <= (hero.y + 32)
+  ) {
+    ++doorsPosted;
+    reset();
+  }
+};
+
+// Draw everything
+var render = function () {
+  if (bgReady) {
+    ctx.drawImage(bgImage, 0, 0);
+  }
+
+  if (heroReady) {
+    ctx.drawImage(heroImage, hero.x, hero.y);
+  }
+
+  if (doorReady) {
+    ctx.drawImage(doorImage, door.x, door.y);
+  }
+
+  if (thesisReady) {
+    ctx.drawImage(thesisImage, thesis.x, thesis.y);
+  }
+
+  // Score
+  ctx.fillStyle = "rgb(250, 250, 250)";
+  ctx.font = "18px Playfair Display";
+  ctx.textAlign = "left";
+  ctx.textBaseline = "top";
+  ctx.fillText("Theses Posted: " + doorsPosted, 8, 8);
+};
+
+// The main game loop
+var main = function () {
+  var now = Date.now();
+  var delta = now - then;
+
+  update(delta / 1000);
+  render();
+
+  then = now;
+
+  // Request to do this again ASAP
+  requestAnimationFrame(main);
+};
+
+// Cross-browser support for requestAnimationFrame
+var w = window;
+requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
+
+// Let's play this game!
+var then = Date.now();
+reset();
+main();
+
+
+    </script>
+
+
+    </main>
+  </body>
+</html>
+
+<!-- //boundary collision
+if (ball.y + ball.vy > canvas.height || ball.y + ball.vy < 0) {
+  ball.vy = -ball.vy;
+}
+if (ball.x + ball.vx > canvas.width || ball.x + ball.vx < 0) {
+  ball.vx = -ball.vx;
+} -->
