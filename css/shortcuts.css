@@ -1,3 +1,6 @@
+body {
+  font-family: "Old Standard TT";
+}
 header {
 
 /*  padding-bottom: 20px;*/
@@ -49,7 +52,7 @@ main {
   display: inline;
   margin-left: 40px;
   position: relative;
-  top: -5px;
+  top: -9px;
   text-weight: bold;
 }
 .top-links a:hover {
@@ -61,7 +64,7 @@ color: #2909B9;
   display: inline;
   margin-left: 40px;
   position: relative;
-  top: -5px;
+  top: -9px;
 }
 
 .top-links p {
@@ -71,7 +74,7 @@ color: #2909B9;
   text-align: left;
   display: inline;
   padding-left: 15px;
-  top:-5px;
+  top:-9px;
   position: relative;
   text-weight: bold;
 }
