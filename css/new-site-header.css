@@ -334,12 +334,12 @@ left: -15px;
 z-index:99999;
 border-bottom: 1px solid #AFEC23;
 }
-#title-two{
+/*#title-two{
   z-index: 99999;
   position: absolute;
   top: 240px;
   left: 620px;
-width: 400px;}
+width: 400px;}*/
 
 
 
@@ -402,8 +402,8 @@ z-index:99999;
 }
 
 #title2 {
-  position: relative;
-  top:20px;
+  position: fixed;
+  top:40px;
   left:2%;
 }
 
