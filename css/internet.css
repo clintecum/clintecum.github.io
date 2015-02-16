@@ -1,0 +1,274 @@
+#blog-content h6 {
+  font-family: "Old Standard TT";
+  text-weight: bold;
+  text-decoration: none;
+  text-size: 14px;
+  position: relative;
+  left: 105px;
+  top: 52px;
+}
+
+#quick {
+  position: fixed;
+  left: 85%;
+  width: 100px;
+  top: 100px;
+  border: 4px outset black;
+  padding-left: 7px;
+  padding-right: 9px;
+  background-color: #94BADF;
+}
+#quick p {
+/*  position: absolute;*/
+  position: relative;
+  left: -34px;
+  z-index: 99999;
+  font-family: "Bentham";
+  color: #531612;
+  top: -9px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: underline;
+
+}
+
+#quick a {
+  font-family: "Bentham";
+  /*color: #202933;*/
+  color: #234260;
+  text-decoration: none;
+  padding-left: 10px;
+  font-size: 14px;
+  position: relative;
+  top: -16px;
+  left: -5px;
+
+}
+#quick a:hover {
+  color: blue;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+#blog-content {
+  position: relative;
+  width: 570px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.move-left {
+  position: relative;
+  left: 45px;
+  width: 500px;
+}
+
+#osi {
+  margin-top: 10px;
+  width: 515px;
+  position: relative;
+  left: 50px;
+}
+
+.space-l {
+  width: 100px;
+  line-height: 28px;
+}
+.space-c {
+  width: 295px;
+   line-height: 28px;
+}
+.space-r {
+  width: 120px;
+   line-height: 28px;
+}
+#l {
+background-color: #5B7593 ;
+  color: #202933;
+}
+#c {
+background-color: #5B7593 ;
+  color: #202933;
+}
+#r {
+  background-color: #5B7593 ;
+  color: #202933;
+}
+
+#l1 {
+  font-family: "Old Standard TT";
+  text-align: center;
+}
+#c1 {
+  font-family: "Old Standard TT";
+  text-align: left;
+  padding-left: 25px;
+}
+#left-cell1 {
+  position: relative;
+  left: -12px;
+}
+#left-cell3 {
+  position: relative;
+  left: 12px;
+}
+#left-cell4 {
+  position: relative;
+  left: 12px;
+  top: 24px;
+}
+#left-cell5 {
+  position: relative;
+  left: 12px;
+  top: 8px;
+}
+#left-cell6 {
+  position: relative;
+  left: 12px;
+  top: 40px;
+}
+#left-cell7 {
+  position: relative;
+  left: 12px;
+  top: 12px;
+}
+.left-cell {
+  position: relative;
+  left: -12px;
+}
+#r1 {
+  font-family: "Old Standard TT";
+  text-align: center;
+}
+
+#osi ul {
+  width: 210px;
+  position: relative;
+  left: -10px;
+  top: 5px;
+  font-family: "Old Standard TT";
+  line-height: 20px;
+}
+.pres {
+  position: relative;
+  left: -12px;
+  top: 10px;
+}
+
+#l2 {
+  font-family: "Old Standard TT";
+  text-align: center;
+
+}
+#c2 {
+  font-family: "Old Standard TT";
+  text-align: left;
+  padding-left: 25px;
+}
+#r2 {
+  font-family: "Old Standard TT";
+  text-align: center;
+
+}
+.space-20px {
+  height: 20px;
+}
+
+#l3 {
+  font-family: "Old Standard TT";
+  text-align: center;
+
+}
+#c3 {
+  font-family: "Old Standard TT";
+  text-align: left;
+}
+#r3 {
+  font-family: "Old Standard TT";
+  text-align: center;
+
+}
+#l4 {
+  font-family: "Old Standard TT";
+  text-align: center;
+
+}
+#c4 {
+  font-family: "Old Standard TT";
+  text-align: left;
+}
+#r4 {
+  font-family: "Old Standard TT";
+  text-align: center;
+
+}
+#l5 {
+  font-family: "Old Standard TT";
+  text-align: center;
+}
+#c5 {
+  font-family: "Old Standard TT";
+  text-align: left;
+}
+#r5 {
+  font-family: "Old Standard TT";
+  text-align: center;
+
+}
+#l6 {
+  font-family: "Old Standard TT";
+  text-align: center;
+}
+#c6 {
+  font-family: "Old Standard TT";
+ text-align: left;
+}
+#r6 {
+  font-family: "Old Standard TT";
+  text-align: center;
+
+}
+#l7 {
+  font-family: "Old Standard TT";
+  text-align: center;
+}
+#c7 {
+  font-family: "Old Standard TT";
+  text-align: left;
+}
+#r7 {
+  font-family: "Old Standard TT";
+  text-align: center;
+
+}
+
+.img {
+  position: relative;
+  left: 95px;
+  top: 32px;
+}
+
+.down {
+  position: relative;
+  top: 35px;
+}
+#tcp-ul ul {
+  font-family: "Old Standard TT";
+  font-size: 14px;
+  position: relative;
+  width: 400px;
+  left: 55px;
+  top: 25px;
+}
+
+#h4-left {
+  position: relative;
+  left: -230px;
+  font-family: "Old Standard TT";
+  top: 31px;
+}
+
+#p-right {
+  position: relative;
+  left: 205px;
+  top: 40px;
+}

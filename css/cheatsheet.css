@@ -1,0 +1,77 @@
+body {
+  background-color: #A3D8E3;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Gentium Book Basic";
+  color: #202933;
+}
+h2 {
+  text-align: center;
+  font-family: "Gentium Book Basic";
+  position: relative;
+  color: #202933;
+  top: -20px;
+}
+
+#leftside-links {
+  position: fixed;
+  padding-left: 12px;
+  top: 75px;
+}
+
+#leftside-links p {
+  color: #B02215;
+  font-family: "Bentham";
+  font-weight: bolder;
+  font-size: 21px;
+}
+
+#leftside-links a {
+  font-family: "Bentham";
+  font-size: 14px;
+  color: #28417D;
+  line-height: 26px;
+  position: relative;
+  top: -20px;
+}
+
+#leftside-links a:hover {
+  color: #B02215;
+}
+
+#rightside-links {
+  position: fixed;
+  float: right;
+  left: 85%;
+  top: 75px;
+}
+
+#rightside-links p {
+  color: #28417D;
+  font-family: "Bentham";
+  font-weight: bolder;
+  font-size :21px;
+}
+
+#rightside-links a {
+  font-family: "Bentham";
+  color: #B02215;
+  font-size: 14px;
+  line-height: 26px;
+  position: relative;
+  top: -20px;
+}
+
+#rightside-links a:hover {
+  color: #28417D;
+  }
+
+  #main-content {
+    width: 570px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+  }

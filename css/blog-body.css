@@ -1,22 +1,19 @@
 body {
   width: 100%;
   margin: 0 auto;
-background-color: black;
-
+  background-color: black;
   overflow-y: hidden;
-
   overflow-x: hidden;
 }
+
 section {
-width: 75%;
-background-color: white;
-height: 100%;
-top: -37px;
-position: relative;
-margin-left: auto;
-margin-right: auto;
-
-
+  width: 75%;
+  background-color: white;
+  height: 100%;
+  top: -37px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #sidebar{

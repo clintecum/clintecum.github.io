@@ -1,0 +1,42 @@
+body {
+  background-color: #;
+  color: #636063;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 25%;
+  left: 85%;
+  border: 2px outset black;
+}
+
+nav p {
+    text-align: center;
+}
+
+nav a {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+nav a:hover {
+  color: red;
+}
+
+section {
+  width: 800px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.codeblock {
+  font-family: "Monospace"
+
+}

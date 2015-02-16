@@ -1,0 +1,77 @@
+header {
+
+/*  padding-bottom: 20px;*/
+}
+h1 {
+  padding-top: 40px;
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+}
+
+section {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 20px;
+
+}
+
+main {
+  padding-top: 20px;
+  width: 990px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.top-links {
+  width: 100.25%;
+  position: fixed;
+  background-color: #AFEC23;
+  height: 10px;
+  left: -5px;
+  top: 16px;
+  border-bottom:4px double black;
+  border-top: 4px double black;
+
+}
+.top-links a {
+  color: black;
+  font-family: "Old Standard TT";
+  font-size: 11px;
+  text-decoration: none;
+  text-align: left;
+  display: inline;
+  margin-left: 40px;
+  position: relative;
+  top: -5px;
+  text-weight: bold;
+}
+.top-links a:hover {
+color: #2909B9;
+  font-family: "Old Standard TT";
+  font-size: 11px;
+  text-decoration: none;
+  text-align: left;
+  display: inline;
+  margin-left: 40px;
+  position: relative;
+  top: -5px;
+}
+
+.top-links p {
+  color: black;
+  font-family: "Old Standard TT";
+  font-size: 11px;
+  text-align: left;
+  display: inline;
+  padding-left: 15px;
+  top:-5px;
+  position: relative;
+  text-weight: bold;
+}

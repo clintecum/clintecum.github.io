@@ -1,0 +1,108 @@
+html {
+  background-color: #CFD4D3;
+}
+header {
+  position: relative;
+  top: -15px;
+  height: 10%;
+  color: white;
+  background-color: #636E63;
+  text-align: center;
+}
+h1 {
+  padding-top: 10px;
+}
+nav {
+  color: white;
+  background-color: #636E63;
+  position: fixed;
+  top: 25%;
+  left: 85%;
+  border: 2px outset black;
+}
+
+nav p {
+  font-size: 1.8em;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav a {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  color:white;
+}
+
+nav a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+section {
+  width: 800px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.codeblock {
+  font-family: Monospace;
+}
+span {
+  position: relative;
+  left: 15px;
+}
+
+
+
+
+.top-links {
+  width: 100.25%;
+  position: fixed;
+  background-color: #AFEC23;
+  height: 10px;
+  left: -5px;
+  top: 16px;
+  border-bottom:4px double black;
+  border-top: 4px double black;
+
+}
+.top-links a {
+  color: black;
+  font-family: "Old Standard TT";
+  font-size: 11px;
+  text-decoration: none;
+  text-align: left;
+  display: inline;
+  margin-left: 40px;
+  position: relative;
+  top: -5px;
+  text-weight: bold;
+}
+.top-links a:hover {
+color: #2909B9;
+  font-family: "Old Standard TT";
+  font-size: 11px;
+  text-decoration: none;
+  text-align: left;
+  display: inline;
+  margin-left: 40px;
+  position: relative;
+  top: -5px;
+}
+
+.top-links p {
+  color: black;
+  font-family: "Old Standard TT";
+  font-size: 11px;
+  text-align: left;
+  display: inline;
+  padding-left: 15px;
+  top:-5px;
+  position: relative;
+  text-weight: bold;
+}
