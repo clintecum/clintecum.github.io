@@ -1,0 +1,56 @@
+aside {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+/*  background-color: #000000;
+background-image: url(http://www.transparenttextures.com/patterns/tileable-wood-colored.png);*/
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/*background-color: #000914;
+background-image: url(http://www.transparenttextures.com/patterns/whitey.png);*/
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+background-color: #000914;
+background-image: url(http://www.transparenttextures.com/patterns/graphcoders-lil-fiber.png);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  width: 1000px;
+  z-index: 99999;
+  top: 88px;
+  height: 100%;
+
+}
+#fill-white {
+  background-color: white;
+  height: 100%;
+  width: 95%;
+  opacity: .4;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article {
+  position: relative;
+  top: -800px;
+  width: 800px;
+  height: 800px;
+  border: 2px solid black;
+  z-index: 99999;
+  left: 24%;
+}
+article p {
+  font-family: "Old Standard TT";
+  padding-left: 90px;
+  width: 400px;
+  position: relative;
+  top: 160px;
+  text-align: justify;
+  text-indent: 18px;
+  font-size: 14px;
+}
+article a {
+  /*text-decoration: none;*/
+  color: black;
+}
+.up {
+  position: relative;
+  top: 145px;
+}
