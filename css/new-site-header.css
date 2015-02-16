@@ -370,7 +370,7 @@ border-bottom: 3px solid #AFEC23;
   display: inline-block;
   position: relative;
   top: -3px;
-  left: -11px;
+  left: 14px;
 /*  box-shadow: 1px 1px 1px white;*/
 
 }
@@ -391,13 +391,17 @@ h2{
 
 nav {
   width: 405px;
-  padding-left: 25px;
-  left:80%;
-  position: fixed;
-  margin-top: -10px;
-  top: 54px;
-clear: both;
-display: inline-block;
+/*  padding-left: 25px;*/
+/*  left:80%;*/
+/*  position: fixed;*/
+position: fixed;
+left: 80%;
+/*left: 11%;*/
+/*float: right;*/
+ /* margin-top: -10px;*/
+  top: 43px;
+/*clear: both;*/
+/*display: inline-block;*/
 z-index:99999;
 }
 
