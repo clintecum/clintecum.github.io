@@ -405,6 +405,7 @@ z-index:99999;
   position: fixed;
   top:40px;
   left:2%;
+  z-index: 99999;
 }
 
 #search-bar {
