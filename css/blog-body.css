@@ -1,22 +1,25 @@
 body {
-  width: 100%;
+/*  width: 100%;*/
   margin: 0 auto;
-  background-color: black;
+   background-repeat: no-repeat;
+  background: linear-gradient(black,black,#400000,#FF1919, #BF0000, #400000,black);
   overflow-y: hidden;
   overflow-x: hidden;
-  height: 900px;
+  height: 1400px;
 
 }
 
-section {
+/*section {
   width: 75%;
   background-color: white;
-  height: 90%;
-  top: -37px;
+  height: 100%;
+  top: -10px;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
+  left: 13%;
+  z-index: 99900;
+
+/*  box-shadow: 2px 2px 3px white;*/
+/*}*/
 
 #sidebar{
 position: absolute;
@@ -47,43 +50,30 @@ background-color: blue;
 }
 
 main{
-  width: 100%;
+  width: 70%;
   height: 100%;
-  position: fixed;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background: linear-gradient(black,#400000,#FF1919, #BF0000, #400000,black);
-  top: 140px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#E7DC9D;
+/*  background-image:
+      radial-gradient(#AFEC23 9px, transparent 10px),
+      repeating-radial-gradient(#AFEC23 0, #AFEC23 4px, transparent 5px, transparent 20px, #AFEC23 21px, #AFEC23 25px, transparent 26px, transparent 50px);
+  background-size: 30px 30px, 90px 90px;
+  background-position: 50 50;*/
+
+/*background-color: #000000;
+
+background-image: url(http://www.transparenttextures.com/patterns/black-thread.png);*/
+  z-index: 99900;
+  top: -104px;
+ /* box-shadow: 3px 3px 3px white;*/
+ border-left: 4px double #222E44;
+ border-right: 4px double #222E44;
+  /*top: -90px;*/
 }
 
 
-
-footer {
-  position: fixed;
-  top: 750px;
-  width: 300%;
-  height: 120px;
-  background-color: black;
- z-index: 99999;
-  left: -100px;
-  border-top: 5px double red;
-}
-
-#container {
-position: relative;
-width: 100%;
-height: 700px;
-margin-left: auto;
-margin-right: auto;
-clear: both;
-
-
-}
-
-
-#content #container #blognav a:hover {
-  color: yellow;
-  }
 
 
 

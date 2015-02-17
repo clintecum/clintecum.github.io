@@ -1,0 +1,114 @@
+#one{
+background-image: url('../img/home-.png');
+background-repeat: no-repeat;
+
+}
+#one:hover {
+  background-image: url('../img/hhomex.png');
+  background-repeat: no-repeat;
+}
+#two {
+background-image: url('../img/blog-.png');
+background-repeat: no-repeat;
+
+}
+#two:hover {
+  background-image: url('../img/hblogx.png');
+  background-repeat: no-repeat;
+}
+
+#three {
+background-image: url('../img/portfolio-.png');
+background-repeat: no-repeat;
+
+}
+#three:hover {
+  background-image: url('../img/hportfoliox.png');
+  background-repeat: no-repeat;
+}
+
+
+#four {
+background-image: url('../img/about-.png');
+background-repeat: no-repeat;
+
+
+}
+#four:hover {
+  background-image: url('../img/haboutx.png');
+  background-repeat: no-repeat;
+
+}
+#five {
+background-image: url('../img/contact-.png');
+background-repeat: no-repeat;
+
+}
+#five:hover {
+  background-image: url('../img/hcontactx.png');
+  background-repeat: no-repeat;
+}
+
+
+#link1 {
+  display: inline-block;
+  margin-left: 3px;
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  color: #F7DD18;
+ font-family: 'Signika';
+ font-size: 9px;
+  text-decoration: none;
+  /*text-shadow: 1px 1px grey;*/
+}
+#link2 {
+  display: inline-block;
+  margin-left: 3px;
+  position: absolute;
+  top: 8px;
+  left: 39px;
+  color: #F7DD18;
+ font-family: 'Signika';
+ font-size: 9px;
+  text-decoration: none;
+/*  text-shadow: 1px 1px grey;*/
+}
+#link3 {
+  display: inline-block;
+  margin-left: 3px;
+  position: absolute;
+    top: 8px;
+  left: 74px;
+  color: #F7DD18;
+  font-family: 'Signika';
+ font-size: 9px;
+  text-decoration: none;
+/*  text-shadow: 1px 1px grey;*/
+}
+#link4 {
+  display: inline-block;
+  margin-left: 3px;
+  position: absolute;
+   top: 8px;
+  left: 113px;
+ /* color: #AFEC23;*/
+ color: #F7DD18;
+ font-family: 'Signika';
+ font-size: 9px;
+  text-decoration: none;
+/*  text-shadow: 1px 1px grey;*/
+}
+#link5 {
+  display: inline-block;
+  margin-left: 3px;
+  position: absolute;
+    top: 8px;
+  left: 148px;
+  color: #F7DD18;
+  font-family: 'Signika';
+ font-size: 9px;
+  text-decoration: none;
+/*  text-shadow: 1px 1px grey;*/
+}
+

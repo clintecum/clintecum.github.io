@@ -1,69 +1,31 @@
 .gradient-screen {
-z-index:99997;
-/*  background-color: black;
-background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
-linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
-linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
-linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
-background-size: 13px, 29px, 37px, 53px;*/
-
-/*background:
-linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-background-color: black;
-background-size: 20px 20px;
-*/
-
-/*background:
-linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
-linear-gradient(63deg, transparent 74%, #999 78%),
-linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
-#444;
-background-size: 16px 48px;*/
-
-
+/*z-index:99997;*/
 /*background-color: black;
-background-image: url(http://www.transparenttextures.com/patterns/45-degree-fabric-light.png);
- This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you!
-*/
-/*background-color: #0a000a;
-background-image: url(http://www.transparenttextures.com/patterns/dark-exa.png);*/
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-/*
-background-color: #0a000a;
-background-image: url(http://www.transparenttextures.com/patterns/gray-floral.png);
- This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you!
-*/
-
-/*background-color: black;
-background-image: url(http://www.transparenttextures.com/patterns/grid-noise.png);*/
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-/*background-color: #0a000a;
-background-image: url(http://www.transparenttextures.com/patterns/ice-age.png);*/
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-
-background-color: black;
-background-image: url(http://www.transparenttextures.com/patterns/light-mesh.png);
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-/*background-color: black;
-background-image: url(http://www.transparenttextures.com/patterns/purty-wood.png);*/
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-
+background-image: url(http://www.transparenttextures.com/patterns/light-mesh.png);*/
 z-index:99989;
-height: 70px;
+/*background-color: #00010f;
+background-image: url(http://www.transparenttextures.com/patterns/brilliant.png);*/
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+height: 83px;
   width: 110%;
   position: fixed;
-  top: 33px;
-  opacity: .35;
+  top: 38px;
+  opacity: .65;
+/*  background-color: #000000;
+background-image: url(http://www.transparenttextures.com/patterns/cubes.png);*/
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/*background-color: #000000;
+background-image: url(http://www.transparenttextures.com/patterns/skulls.png);*/
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/*background-color: #000000;
+background-image: url(http://www.transparenttextures.com/patterns/dark-leather.png)*/;
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/*background-color: #1a0c00;
+background-image: url(http://www.transparenttextures.com/patterns/retina-wood.png);*/
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+background-color: #000000;
+background-image: url(http://www.transparenttextures.com/patterns/dark-wall.png);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 #canvas {
@@ -71,76 +33,29 @@ position: absolute;
 left: 400px;
 top: 100px;
 z-index: 99999;
-
-
 }
-#one{
-background-image: url('../img/home-.png');
-background-repeat: no-repeat;
-
-}
-#one:hover {
-  background-image: url('../img/hhome.png');
-  background-repeat: no-repeat;
-}
-#two {
-background-image: url('../img/blog-.png');
-background-repeat: no-repeat;
-
-}
-#two:hover {
-  background-image: url('../img/hblog.png');
-  background-repeat: no-repeat;
-}
-
-#three {
-background-image: url('../img/portfolio-.png');
-background-repeat: no-repeat;
-
-}
-#three:hover {
-  background-image: url('../img/hportfolio.png');
-  background-repeat: no-repeat;
-}
-
-
-#four {
-background-image: url('../img/about-.png');
-background-repeat: no-repeat;
-
-
-}
-#four:hover {
-  background-image: url('../img/habout.png');
-  background-repeat: no-repeat;
-
-}
-#five {
-background-image: url('../img/contact-.png');
-background-repeat: no-repeat;
-
-}
-#five:hover {
-  background-image: url('../img/hcontact.png');
-  background-repeat: no-repeat;
-}
-
-
-
 
 h1{
-position: absolute;
-top: -4px;
-left: 2%;
+/*  background-color: black;*/
+position: relative;
+top: -9px;
+left: 1%;
 text-align: center;
 text-decoration: bold;
-color: #AFEC23;
+color: #F7DD18;
+/*color: #0D2144;*/
 clear:both;
 display: inline-block;
 z-index: 99999;
 font-family: "Germania One";
-font-size: 24px;
-text-shadow: 2px 2px red;
+font-size: 19px;
+/*text-shadow: 2px 2px red;*/
+/*text-outline: 1px 1px white;*/
+
+  /* -webkit-text-fill-color: #0D2144;  Will override color (regardless of order)
+   -webkit-text-stroke-width: .2px;
+   -webkit-text-stroke-color: #F7DD18;*/
+
 }
 
 #title{
@@ -158,26 +73,6 @@ color: yellow;
 
 }
 
-
-address {
-position: relative;
-float:right;
-top: 1px;
-margin-right: 75px;
-}
-
-address a {
-margin-right: 15px;
-color:red;
-font-family: "Francoise One";
-font-size: 18px;
-display: inline;
-text-decoration: none;
-}
-address a:hover{
-  color: pink;
-  font-size: 18px;
-}
 
 .content {
 width: 50px;
@@ -202,67 +97,6 @@ border-bottom-left-radius: 50px 50px;
 
 
 
-#link1 {
-  display: inline-block;
-  margin-left: 3px;
-  position: absolute;
-  top: 43px;
-  left: 24px;
-  color: yellow;
-  font-family: 'Old Standard TT';
-  font-size: 9px;
-  text-decoration: none;
-  text-shadow: 1px 1px red;
-}
-#link2 {
-  display: inline-block;
-  margin-left: 3px;
-  position: absolute;
-  top: 43px;
-  left: 76px;
-  color: yellow;
-  font-family: 'Old Standard TT';
-  font-size: 9px;
-  text-decoration: none;
-  text-shadow: 1px 1px red;
-}
-#link3 {
-  display: inline-block;
-  margin-left: 3px;
-  position: absolute;
-  top: 43px;
-  left: 121px;
-  color: yellow;
-  font-family: 'Old Standard TT';
-  font-size: 9px;
-  text-decoration: none;
-  text-shadow: 1px 1px red;
-}
-#link4 {
-  display: inline-block;
-  margin-left: 3px;
-  position: absolute;
-  top: 43px;
-  left: 171px;
- /* color: #AFEC23;*/
- color: yellow;
- font-family: 'Old Standard TT';
-  font-size: 9px;
-  text-decoration: none;
-  text-shadow: 1px 1px red;
-}
-#link5 {
-  display: inline-block;
-  margin-left: 3px;
-  position: absolute;
-  top: 43px;
-  left: 216px;
-  color: yellow;
-  font-family: 'Old Standard TT';
-  font-size: 9px;
-  text-decoration: none;
-  text-shadow: 1px 1px red;
-}
 #search-p{
   position: fixed;
   font-family: "Bentham";
@@ -286,53 +120,104 @@ border-bottom-left-radius: 50px 50px;
 }*/
 
 
-#title-extra{
-  z-index: 99998;
-  position: absolute;
-  top: 250px;
-  left: 5px}
 
-.date {
-  position: absolute;
-  top: 4px;
-  left: 1125px;
-  font-family: "Bentham";
-  font-size: 13px;
-  color: #AFEC23;
-  height: 17px;
-  width: 297px;
+
+
+
+
+#mid-bar {
+  background: linear-gradient(#AFEC23,#AFEC23);
+  height: 1px;
+  width: 110%;
+  z-index:99999;
+  border-top: 3px double #AFEC23;
+/*  border-bottom: 1px solid #AFEC23;*/
+  box-shadow: 1px 1px 3px #AFEC23;
+  position: fixed;
+  top: 31px;
+}
+
+#move-down {
+/*  position: fixed;
+  top: 200px;*/
+/*  z-index:99999;*/
+   background: linear-gradient(#AFEC23,#AFEC23);
+  height: 1px;
+  width: 110%;
+  z-index:99999;
+/*  border-top: 1px solid #AFEC23;*/
+  border-bottom: 1px solid #AFEC23;
+  box-shadow: 1px 1px 5px #AFEC23;
+  position: fixed;
+  top: 57px;
+}
+
+
+
+
+
+
+#low-bar {
+  background: linear-gradient(#AFEC23,#AFEC23,black);
+  height: 1px;
+  width: 110%;
+  border-bottom: 1px solid #AFEC23;
+  border-top: 1px solid #AFEC23;
+  top: 81px;
+  position:relative;
+  box-shadow: 1px 1px 4px #AFEC23;
   z-index: 99999;
+/*  opacity:.9;*/
 }
 
-.addthis_toolbox {
-  position: absolute;
-  height: 30px;
-  width: 80px;
+
+#make-darkness {
+  width: 100%;
+  height: 31px;
+  position: fixed;
+/*  background-color: white;*/
+  opacity: 1;
+  z-index: 99888;
+
+/*background-color: #000000;
+background-image: url(http://www.transparenttextures.com/patterns/bright-squares.png);*/
+
+
+
+background-color: #000000;
+background-image: url(http://www.transparenttextures.com/patterns/soft-wallpaper.png);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
+
+
+
+
+
+
 
 #top-bar {
-  background: linear-gradient(black, #AFEC23);
-  height: 5px;
-  width: 110%;
-  border-bottom: 6px double black;
-}
-#low-bar {
-  background: linear-gradient(#AFEC23,black);
-  height: 5px;
-  width: 110%;
-  border-bottom: 2px double #AFEC23;
-  top: 70px;
-  position:relative;
-}
-#lower-bar {
 background-color:black;
-height: 23px;
+height: 30px;
 width: 110%;
-position: relative;
+position: fixed;
 left: -15px;
+/*top:-9px;*/
 /*top:70px;*/
 z-index:99999;
 border-bottom: 1px solid #AFEC23;
+border-top: 1px solid #AFEC23;
+top: 28px;
+
+/*background-color: #000000;
+background-image: url(http://www.transparenttextures.com/patterns/cross-scratches.png);*/
+
+/*background-color: #000000;
+background-image: url(http://www.transparenttextures.com/patterns/black-thread.png)*/
+
+
+background-color: #000000;
+background-image: url(http://www.transparenttextures.com/patterns/felt.png);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 /*#title-two{
   z-index: 99999;
@@ -346,140 +231,95 @@ width: 400px;}*/
 
 header {
   width: 100%;
-  height: 70px;
- /* background-color: black;*/
+  height: 74px;
   position: fixed;
   left: -10px;
-  top:23px;
-
-  /*z-index: 99999;*/
- /* border-bottom: 1px double #AFEC23;*/
- background-color: black;
-/*background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
-linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
-linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
-linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
-background-size: 13px, 29px, 37px, 53px;*/
-border-bottom: 3px solid #AFEC23;
+  top:33px;
+  background-color: black;
+/*  border-bottom: 3px solid #AFEC23;*/
+  clear: both;
+  z-index: 99999;
 }
 
-.box{
-  height:48px;
-  width: 38px;
-  margin-left: 8px;
-  display: inline-block;
-  position: relative;
-  top: -3px;
-  left: 14px;
-/*  box-shadow: 1px 1px 1px white;*/
 
-}
 
 
 h2{
-  color: #AFEC23;
-  font-family: 'Teko', sans-serif;
-  font-size: 45px;
-/*  font-style: italic;*/
+ /* color: #F7DD18;*/
+  color: #17181F;
+  font-family: 'Smythe', sans-serif;
+  font-size: 31px;
   position: fixed;
-  left: 45%;
-  top: 1px;
-  z-index:99998;
-  text-shadow: 3px 3px 3px red;
+  left: 45.75%;
+  top: -4px;
+  z-index:99999;
+  /*text-shadow: 3px 3px 3px #0110D2;*/
+/*text-shadow: 6px 6px 6px black;*/
+}
+#move-icon {
+  position: relative;
+  top: 5px;
 
 }
 
+.box{
+  height:45px;
+  width: 38px;
+  margin-left: -6px;
+  display: inline-block;
+  position: relative;
+  top: 19px;
+  left: 5px;
+  box-shadow: 1px 1px .5px black;
+border: 1.5px outset black;
+}
+
 nav {
-  width: 405px;
+  width: 200px;
 /*  padding-left: 25px;*/
 /*  left:80%;*/
 /*  position: fixed;*/
 position: fixed;
-left: 80%;
+left: 84%;
 /*left: 11%;*/
 /*float: right;*/
  /* margin-top: -10px;*/
-  top: 43px;
+  top: 11px;
 /*clear: both;*/
 /*display: inline-block;*/
 z-index:99999;
+/* background-color:black;*/
+/* border-left: 4px outset #AFEC23;*/
+/* border-right: 4px inset #AFEC23;*/
+/* box-shadow: 1px 1px 2px #AFEC23;*/
+ height: 45px;
+
+/* border-top-left-radius: 50px 50px;
+ border-bottom-left-radius: 50px 50px;*/
+
+
+/*border-top-right-radius: 25px 25px;
+border-bottom-right-radius: 25px 25px;
+*/
 }
 
-#title2 {
-  position: fixed;
-  top:40px;
-  left:2%;
-  z-index: 99999;
-}
 
 #search-bar {
   width: 230px;
-  height: 20px;
+  height: 22px;
   background-color: #AFEC23;
   position: absolute;
-  top: 0px;
+  top: 4px;
 /*  float:right;*/
 /*  top: 92px;*/
   /*left: 80px;*/
   left: 75%;
-  border: 1px solid yellow;
+  border: 2px outset black;
 z-index: 99999;}
 
-#fill-green {
-
-/*background-color: #000000;
-background-image: url(http://www.transparenttextures.com/patterns/retina-wood.png);*/
-/*background-color: #000000;
-background-image: url(http://www.transparenttextures.com/patterns/rough-cloth-light.png);*/
-background-color: #000000;
-background-image: url(http://www.transparenttextures.com/patterns/skulls.png);
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-  width: 100%;
-  height: 23px;
-  opacity: .9;
-}
 
 
-
-
-
-section {
-  /*background: radial-radiant(pink, black, red, orange, black, pink, red);*/
-/*  background: rgb(69,72,77); /* Old browsers */
-/*background: -moz-linear-gradient(top, rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
-/*//*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69,72,77,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
-/*background: -webkit-linear-gradient(top, rgba(6*9,72,77,1) 0%,rgba(0,0,0,1) 100%);**/ /* Chrome10+,Safari5.1+ */
-/*background: -o-linear-gradient(top, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);*/ /* Opera 11.10+ */
-/*background: -ms-linear-gradient(top, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
-/*background: linear-gradient(to bottom, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /*
-/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* */
-
-/*copy*/
-
-/* ZIGZAG PATTERN
-/*background:
-linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
-linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
-linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
-linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
-background-size: 100px 100px;
-background-color: #EC173A;*/
-
-
-/* STARRY NIOGHT */
-/*background-color:black;
-background-image:
-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;*/
-
-
-
-/*MARRAKESHT */
+/*section {
 background-color:black;
 background-image:
 radial-gradient(#AFEC23 9px, transparent 10px),
@@ -487,37 +327,109 @@ repeating-radial-gradient(#AFEC23 0, #AFEC23 4px, transparent 5px, transparent 2
 background-size: 30px 30px, 90px 90px;
 background-position: 0 0;
 
-
-
-
-
-
   width: 110%;
   height: 100%;
   position: relative;
-  top: -6%;
-  z-index:99998;
-  opacity: .1;
-}
-
-main{
-  width: 100%;
-/*  height: 100%;*/
-  position: fixed;
-  /*background-size: 100%;*/
-  background-repeat: no-repeat;
-  background: linear-gradient(black,#400000,#FF1919, #BF0000, #400000,black);
-  top: 150px;
-}
+  top: 1%;
+  z-index:99999;
+  opacity: .7;
+}*/
 
 
-.screen {
+
+
+/*.screen {
   height: 70px;
   width: 110%;
   position: fixed;
-  top: 33px;
+  top: 23px;
   opacity: 1;
   background-color: black;
 /*  z-index:99990;*/
+/*}
+*/
+
+
+#social ul {
+  list-style-type: none;
+  width: 300px;
+/*  margin-left: 10px;*/
+  position: relative;
+  top:-58px;
+  left: 16%;
+  z-index: 99999;
+
+}
+#social ul li {
+  display: inline;
+  margin-left: 20px;
+  z-index: 99999;
 }
 
+.circle {
+width: 50px;
+height: 50px;
+/*background: linear-gradient(#E82C0C,#F52E0C,#CF270A,#CF270A,#F52E0C,#CF270A,#A82008,#F52E0C,#F52E0C,#CF270A);*/
+/*background: linear-gradient(#E82C0C,#E82C0C,#E82C0C,black,black, black,black,black,black,black,#F52E0C,#F52E0C,#CF270A);*/
+/*background: linear-gradient(black,black,black,black,black, black,black,black,black,#A82008,#F52E0C,#F52E0C,#CF270A);*/
+background: linear-gradient(black,black,black,black,#AFEC23,#AFEC23);
+top: 26px;
+position: absolute;
+left:92px;
+margin-right: auto;
+margin-left: auto;
+
+border-top-left-radius: 50px 50px;
+border-top-right-radius: 50px 50px;
+border-bottom-right-radius: 50px 50px;
+border-bottom-left-radius: 50px 50px;
+
+
+}
+
+
+#parallelogram {
+ /* position: relative;
+  margin-left: auto;
+  margin-right: auto;*/
+  position: fixed;
+  top: 23px;
+  left: 42.8%;
+  background-color: #AFEC23;
+  width: 170px;
+  height: 36px;
+  z-index: 99998;
+/*  -webkit-transform: skew(20deg);
+     -moz-transform: skew(20deg);
+       -o-transform: skew(20deg);
+  background: #30556C;*/
+ /* box-shadow: 2px 2px 1px white;*/
+ border-top: 2px inset #AFEC23;
+  border-left: 2px inset #AFEC23;
+  border-right: 2px outset #AFEC23;
+  border-bottom: 2px outset #AFEC23;
+}
+
+
+#extras ul {
+  list-style-type: none;
+  width: 600px;
+/*  margin-left: 10px;*/
+  position: relative;
+  top:-107px;
+  left: 56%;
+  z-index: 99999;
+
+}
+#extras ul li {
+  display: inline;
+  margin-left: 15px;
+  z-index: 99999;
+  font-size: 12px;
+  color: white;
+}
+
+#extras ul li a {
+  color: white;
+  text-decoration: none;
+}

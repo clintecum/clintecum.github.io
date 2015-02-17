@@ -28,13 +28,13 @@ background-image: url(http://www.transparenttextures.com/patterns/graphcoders-li
 }
 
 article {
-  position: relative;
-  top: -800px;
+  position: fixed;
+  top: 0px;
   width: 800px;
   height: 800px;
   border: 2px solid black;
   z-index: 99999;
-  left: 24%;
+  left: 40%;
 }
 article p {
   font-family: "Old Standard TT";
