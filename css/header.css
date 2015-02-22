@@ -38,8 +38,8 @@ z-index: 99999;
 h1{
 /*  background-color: black;*/
 position: relative;
-top: -9px;
-left: 1%;
+top: -11px;
+left: 3%;
 text-align: center;
 text-decoration: bold;
 color: #F7DD18;
@@ -125,18 +125,7 @@ border-bottom-left-radius: 50px 50px;
 
 
 
-#mid-bar {
-  background: linear-gradient(#AFEC23,#AFEC23);
-  height: 1px;
-  width: 110%;
-  z-index:99999;
-  border-top: 3px double #AFEC23;
-/*  border-bottom: 3px outset #506C10;*/
-/*  border-bottom: 1px solid #AFEC23;*/
-  box-shadow: 1px 1px 3px #AFEC23;
-  position: fixed;
-  top: 31px;
-}
+
 
 #move-down {
 /*  position: fixed;
@@ -174,23 +163,32 @@ border-bottom-left-radius: 50px 50px;
 
 #make-darkness {
   width: 100%;
-  height: 31px;
+  height: 45px;
   position: fixed;
 /*  background-color: white;*/
   opacity: 1;
   z-index: 99888;
-
-/*background-color: #000000;
-background-image: url(http://www.transparenttextures.com/patterns/bright-squares.png);*/
-
-
+  border-bottom: 2px solid red;
 
 background-color: #000000;
 background-image: url(http://www.transparenttextures.com/patterns/soft-wallpaper.png);
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
-
+#mid-bar {
+/*  background: linear-gradient(#AFEC23,#AFEC23);*/
+background: linear-gradient(#0F5E11, #afec23);
+  height: 6px;
+  width: 110%;
+  z-index:99999;
+  border-top: 3px double #0F5E11;
+/*  border-bottom: 3px outset #506C10;*/
+/*  border-bottom: 1px solid #AFEC23;*/
+  box-shadow: 1px 1px 16px black;
+  position: fixed;
+  top: 47px;
+  border-bottom: 3px solid #F7DD18;
+}
 
 
 
@@ -231,13 +229,13 @@ width: 400px;}*/
 
 
 header {
-  width: 100%;
-  height: 74px;
+/*  width: 100%;
+  height: 74px;*/
   position: fixed;
-  left: -10px;
+/*  left: -10px;
   top:33px;
   background-color: black;
-/*  border-bottom: 3px solid #AFEC23;*/
+/*  border-bottom: 3px solid #AFEC23;*/*/
   clear: both;
   z-index: 99999;
 }
@@ -248,13 +246,18 @@ header {
 h2{
  /* color: #F7DD18;*/
 /*  color: #17181F;*/
-  color: black;
+  color: #AEF70E;
   font-family: 'Smythe', sans-serif;
-  font-size: 24px;
-  position: fixed;
-  left: 46.75%;
-  top: 8px;
+  font-size: 28px;
+  /*position: fixed;*/
+ /* left: 46.75%;
+  top: 8px;*/
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: -29px;
   z-index:99999;
+  left: 38px;
   /*text-shadow: 3px 3px 3px #0110D2;*/
 /*text-shadow: 6px 6px 6px black;*/
 }
@@ -268,7 +271,8 @@ h2{
   height:45px;
   width: 38px;
   margin-left: -6px;
-  display: inline-block;
+/*  display: inline-block;*/
+margin-bottom: 35px;
   position: relative;
   top: 11px;
   left: 8px;
@@ -277,47 +281,44 @@ border: 1.5px outset black;
 }
 
 nav {
-  width: 199px;
-/*  padding-left: 25px;*/
-/*  left:80%;*/
-/*  position: fixed;*/
+  width: 290px;
 position: fixed;
-/*left: 85.25%;*/
-left: 83%;
-/*left: 11%;*/
-/*float: right;*/
- /* margin-top: -10px;*/
-  top: 10px;
-/*clear: both;*/
-/*display: inline-block;*/
-z-index:99999;
- background-color:#afec23;
-/* border-left: 4px inset #afec23;
- border-top: 4px inset #afec23;
- border-right: 4px outset #afec23;
- border-bottom: 4px outset #afec23;*/
+left: .5%;
+  top: 25px;
+ z-index:99999;
+/*background-color:#635A55;
+ border-bottom: 3px outset #D95A52;
+ border-left: 3px outset #D95A52;
+ border-right: 3px outset #D95A52;*/
+ height: 25px;
 
- border: 4px outset #afec23;
-
-/* border-left: 4px outset #AFEC23;
- border-right: 4px inset #AFEC23;
- box-shadow: 1px 1px 2px #AFEC23;*/
- height: 60px;
-/*border-left: 2px solid #506C10;
-border-bottom: 2px solid #506C10;
-border-right: 2px solid #506C10;*/
-
-/* border-top-left-radius: 50px 50px;
- border-bottom-left-radius: 50px 50px;*/
+}
 
 
-/*border-top-right-radius: 25px 25px;
-border-bottom-right-radius: 25px 25px;
-*/
+nav ul {
+  list-style: none;
+  position: relative;
+  top: -16px;
+  left: -44px;
 
+}
 
-/*background-color: black;*/
+nav ul li {
+  display: inline;
+  color: #D95A52;
+  margin-left: 5px;
 
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: WHITE;
+  font-family: "EB Garamond";
+  font-size: 12px;
+}
+
+nav ul li a:hover {
+  color: blue;
 }
 
 
@@ -371,9 +372,9 @@ background-position: 0 0;
   list-style-type: none;
   width: 300px;
 /*  margin-left: 10px;*/
-  position: relative;
-  top:-58px;
-  left: 16%;
+  position: fixed;
+  top:-11px;
+  left: 79%;
   z-index: 99999;
 
 }
@@ -406,48 +407,46 @@ border-bottom-left-radius: 50px 50px;
 
 
 #parallelogram {
- /* position: relative;
-  margin-left: auto;
-  margin-right: auto;*/
+
   position: fixed;
-  top: 25px;
-  left: 42.8%;
- /* background-color: #AFEC23;*/
-/* background-color: black;*/
-  width: 170px;
-  height: 28px;
+  top: 12px;
+  left: 40.8%;
+
   z-index: 99999;
-/*  -webkit-transform: skew(20deg);
-     -moz-transform: skew(20deg);
-       -o-transform: skew(20deg);
-  background: #30556C;*/
- /* box-shadow: 2px 2px 1px white;*/
-/* border-top: 5px inset black;
-  border-left: 5px inset #afec23;
-  border-right: 5px outset #afec23;
-  border-bottom: 5px outset #afec23;*/
-  border: 5px outset #afec23;
-  background-color: #afec23;
+
+/*background-color: #006a8a;
+background-image: url(http://www.transparenttextures.com/patterns/washi.png);*/
+/*background-color: gold;
+border: 2px outset gold;*/
+
+  width: 140px;
+  height: 23px;
 /*
-background-color: #000000;
-background-image: url(http://www.transparenttextures.com/patterns/purty-wood.png);*/
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;*/
+}
+
+#parallelogram a {
+  position: relative;
+  top: -5px;
+  font-family: "EB Garamond";
 }
 
 
 #extras ul {
   list-style-type: none;
-  width: 600px;
+  width: 1100px;
 /*  margin-left: 10px;*/
-  position: relative;
-  top:-107px;
-  left: 56%;
+  position: fixed;
+  top:-15px;
+  left: 55%;
   z-index: 99999;
 
 }
 #extras ul li {
   display: inline;
-  margin-left: 15px;
+  margin-left: 10px;
   z-index: 99999;
   font-size: 12px;
   color: white;
@@ -459,21 +458,4 @@ background-image: url(http://www.transparenttextures.com/patterns/purty-wood.png
   font-family: "EB Garamond";
 }
 
-#about-myself {
-  width: 30%;
-  font-family: "EB Garamond";
-  font-size: 14px;
-  position: relative;
-  top: 125px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: justify;
-  text-indent: 25px;
-}
 
-#my-picture {
-  position: relative;
-  left: 53%;
-  top: 100px;
-
-}

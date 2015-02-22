@@ -54,33 +54,36 @@ background-repeat: no-repeat;
   display: inline-block;
   margin-left: 3px;
   position: absolute;
-  top: 8px;
-  left: 0px;
-  color: #F7DD18;
+  top: 0px;
+  left: 5px;
+  color: black;
  font-family: 'Signika';
  font-size: 9px;
   text-decoration: none;
+  font-weight: bold;
   /*text-shadow: 1px 1px grey;*/
 }
 #link2 {
   display: inline-block;
   margin-left: 3px;
   position: absolute;
-  top: 8px;
-  left: 39px;
-  color: #F7DD18;
+  top: 85px;
+  left: 5px;
+  color: black;
  font-family: 'Signika';
  font-size: 9px;
   text-decoration: none;
+  font-weight: bold;
 /*  text-shadow: 1px 1px grey;*/
 }
 #link3 {
   display: inline-block;
+  font-weight: bold;
   margin-left: 3px;
   position: absolute;
-    top: 8px;
-  left: 74px;
-  color: #F7DD18;
+    top: 0px;
+  left: 78px;
+  color: black;
   font-family: 'Signika';
  font-size: 9px;
   text-decoration: none;
@@ -90,11 +93,12 @@ background-repeat: no-repeat;
   display: inline-block;
   margin-left: 3px;
   position: absolute;
-   top: 8px;
-  left: 113px;
+   top: 0px;
+  left: 118px;
  /* color: #AFEC23;*/
- color: #F7DD18;
+ color: black;
  font-family: 'Signika';
+ font-weight: bold;
  font-size: 9px;
   text-decoration: none;
 /*  text-shadow: 1px 1px grey;*/
@@ -103,9 +107,10 @@ background-repeat: no-repeat;
   display: inline-block;
   margin-left: 3px;
   position: absolute;
-    top: 8px;
-  left: 148px;
-  color: #F7DD18;
+    top: 0px;
+  left: 152px;
+  color: black;
+  font-weight: bold;
   font-family: 'Signika';
  font-size: 9px;
   text-decoration: none;

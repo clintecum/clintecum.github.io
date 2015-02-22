@@ -1,0 +1,121 @@
+body {
+  margin: 0 auto;
+
+/*  background: linear-gradient(black,black,#400000,#FF1919, #BF0000, #400000,black);*/
+background-color: #006a8a;
+background-image: url(http://www.transparenttextures.com/patterns/subtle-grey.png);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 1050px;
+/*  position: absolute;*/
+}
+
+
+
+
+
+#background-image {
+/*  background-image: "img/new-bkg.png";*/
+  background-size: 100%;
+  position: absolute;
+  z-index: 99999;
+  top: 130px;
+  left: 2px;
+  opacity:.9;
+}
+
+
+footer {
+  height: 75px;
+ background-color: #000000;
+background-image: url(http://www.transparenttextures.com/patterns/dark-wall.png);
+width: 170%;
+position: absolute;
+z-index: 99999;
+border-top: 4px inset #afec23;
+top: 1890px;
+left: -2px;
+
+}
+
+#background-image img.resize {
+  width: 500px;
+  height: auto;
+}
+
+#about-myself {
+  width: 70%;
+  font-family: "EB Garamond";
+  font-size: 13px;
+  position: relative;
+  top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  text-indent: 25px;
+  z-index: 99999;
+  color: black;
+}
+
+#frame {
+  background-color: #C1D9AF;
+  border: 2px outset black;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+  top: 205px;
+  z-index: 99999;
+  height: 450px;
+
+}
+
+#my-picture {
+  position: relative;
+  left: 54%;
+  top: 35px;
+  z-index: 99999;
+
+}
+
+
+#decorate {
+  /*width: 790px;*/
+  /*border: 2px solid black;*/
+  width: 99.5%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  height: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: -820px;
+  background-color: #DDFFDA;
+
+
+}
+
+section {
+  background-color: #899E87 ;
+  width: 98%;
+  height: 200%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+}
+
+main{
+  width: 70%;
+  height: 2000px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+ /* background: linear-gradient(black,#E7DC9D, #E7dc9d);*/
+ background-color: #C0DEBE;
+  z-index: 99900;
+  top: -104px;
+ border-left: 4px double #222E44;
+ border-right: 4px double #222E44;
+}
