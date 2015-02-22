@@ -99,7 +99,7 @@ left: -2px;
 section {
   background-color: #899E87 ;
   width: 98%;
-  height: 200%;
+  height: 300%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -108,7 +108,7 @@ section {
 
 main{
   width: 70%;
-  height: 2000px;
+/*  height: 2000px;*/
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -116,6 +116,20 @@ main{
  background-color: #C0DEBE;
   z-index: 99900;
   top: -104px;
+ border-left: 4px double #222E44;
+ border-right: 4px double #222E44;
+}
+
+#blog-main{
+  width: 70%;
+  height: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+ /* background: linear-gradient(black,#E7DC9D, #E7dc9d);*/
+ background-color: #C0DEBE;
+  z-index: 99900;
+  top: 54px;
  border-left: 4px double #222E44;
  border-right: 4px double #222E44;
 }
