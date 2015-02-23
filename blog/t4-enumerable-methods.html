@@ -10,6 +10,16 @@
 <link href='http://fonts.googleapis.com/css?family=IM+Fell+French+Canon:400,400italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Tangerine:400,700|Londrina+Shadow|Oswald|Playfair+Display+SC|Old+Standard+TT' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=BenchNine:400,700|EB+Garamond|Old+Standard+TT:400,700,400italic|Gentium+Book+Basic:400,700|La+Belle+Aurore|Bentham' rel='stylesheet' type='text/css'>
+<style>
+#move-up {
+  position: relative;
+  top: -23px;
+}
+#right {
+  position: relative;
+  left: 175px;
+}
+</style>
   </head>
 
 
@@ -17,6 +27,7 @@
   <body>
 
   <div id="links-left">
+    <span id="move-up">
         <p>Week One</p>
         <a href="../blog/c1-chefs-kitchen.html">Fireside Chat</a><br>
         <a href="../blog/t1-git-blog.html">Version Control with git and Github</a>
@@ -43,6 +54,7 @@
         <p>Week Nine</p>
         <a href="../blog/t9-blogging.html">Reflections on Blogging</a><br>
         <a href="../blog/c9-questions.html">Asking Better Questions</a>
+      </span>
 
 
 
@@ -59,7 +71,9 @@
 
 
 <p>
+
 <table>
+  <div id="right">
   <tbody>
     <tr>
       <th id="th1" class="th-element">Simple Definition</th>
@@ -78,7 +92,9 @@
       <td>#cycle saves elements in an internal array.  If no block is given, then an Enumerable::enumerator is returned.</td>
     </tr>
   </tbody>
+  </div>
 </table>
+
 </p>
 <p>NOTE: Official documentation can be found at <a href="http://ruby-doc.org/core-2.2.0/Enumerable.html#method-i-cycle">ruby-doc.org</a></p>
 
